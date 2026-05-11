@@ -302,6 +302,79 @@
       margin-top: 14px;
     }
 
+    .legal-links {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .legal-links a {
+      color: #2f6570;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .legal-links a:hover {
+      text-decoration: underline;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      z-index: 60;
+      border: 1px solid rgba(86, 132, 145, 0.35);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 14px 32px rgba(24, 57, 64, 0.2);
+      padding: 14px;
+      display: none;
+    }
+
+    .cookie-banner.show {
+      display: block;
+      animation: rise .35s ease both;
+    }
+
+    .cookie-title {
+      margin: 0 0 4px;
+      font-weight: 800;
+      color: #17414a;
+    }
+
+    .cookie-text {
+      margin: 0;
+      color: #4d6670;
+      font-size: 0.9rem;
+    }
+
+    .cookie-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .cookie-btn {
+      border: 1px solid rgba(86, 132, 145, 0.3);
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: #fff;
+      color: #17414a;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .cookie-btn.accept {
+      background: linear-gradient(130deg, #2de1ca, #8ef4e5);
+      border-color: transparent;
+      color: #083631;
+    }
+
     .section:nth-child(1) { animation-delay: .06s; }
     .section:nth-child(2) { animation-delay: .12s; }
     .section:nth-child(3) { animation-delay: .18s; }
@@ -453,7 +526,41 @@
     </div>
   </main>
 
-  <footer>© 2026 Opusvolt</footer>
+  <footer>
+    <div>© 2026 Opusvolt</div>
+    <div class="legal-links">
+      <a href="/aviso-privacidad.html">Aviso de Privacidad</a>
+      <a href="/politica-cookies.html">Politica de Cookies</a>
+      <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a>
+    </div>
+  </footer>
+  <aside class="cookie-banner" id="cookieBanner" aria-label="Aviso de cookies">
+    <p class="cookie-title">Uso de cookies</p>
+    <p class="cookie-text">Usamos cookies para mejorar tu experiencia y analizar trafico. Al continuar, aceptas nuestra <a href="/politica-cookies.html">Politica de Cookies</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn accept" id="acceptCookies">Aceptar</button>
+      <button class="cookie-btn" id="rejectCookies">Rechazar no esenciales</button>
+    </div>
+  </aside>
+  <script>
+    (function () {
+      var key = "opusvolt_cookie_choice";
+      var banner = document.getElementById("cookieBanner");
+      var accept = document.getElementById("acceptCookies");
+      var reject = document.getElementById("rejectCookies");
+      if (!banner || !accept || !reject) return;
+      var saved = localStorage.getItem(key);
+      if (!saved) banner.classList.add("show");
+      accept.addEventListener("click", function () {
+        localStorage.setItem(key, "accepted");
+        banner.classList.remove("show");
+      });
+      reject.addEventListener("click", function () {
+        localStorage.setItem(key, "rejected");
+        banner.classList.remove("show");
+      });
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
