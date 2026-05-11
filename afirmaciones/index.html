@@ -7,14 +7,18 @@
   <title>Afirmaciones Positivas Pro | Opusvolt</title>
   <style>
     :root {
-      --bg: #f3fbf9;
-      --text: #173534;
-      --muted: #4f6f6d;
-      --card: #ffffff;
-      --line: #d8ebe7;
-      --accent: #1fcab6;
-      --accent-soft: #e7fffa;
-      --shadow: 0 14px 36px rgba(23, 53, 52, 0.1);
+      --bg-a: #ecfffb;
+      --bg-b: #fff4e9;
+      --bg-c: #eef2ff;
+      --text: #16313a;
+      --muted: #4f6670;
+      --card: rgba(255, 255, 255, 0.84);
+      --line: rgba(93, 133, 145, 0.2);
+      --mint: #27d7bf;
+      --sky: #65a8ff;
+      --peach: #ffb365;
+      --pink: #ff72b6;
+      --shadow: 0 18px 45px rgba(34, 58, 69, 0.14);
     }
 
     * { box-sizing: border-box; }
@@ -24,309 +28,339 @@
       font-family: "Avenir Next", "Montserrat", "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 8% 0%, #dcf7f0 0%, transparent 43%),
-        radial-gradient(circle at 92% 100%, #e8f7ff 0%, transparent 44%),
-        var(--bg);
-      line-height: 1.6;
+        radial-gradient(circle at 8% 10%, rgba(39, 215, 191, 0.25), transparent 36%),
+        radial-gradient(circle at 88% 18%, rgba(255, 179, 101, 0.22), transparent 34%),
+        radial-gradient(circle at 70% 88%, rgba(101, 168, 255, 0.2), transparent 36%),
+        linear-gradient(145deg, var(--bg-a), var(--bg-b) 55%, var(--bg-c));
+      min-height: 100vh;
+      line-height: 1.55;
       overflow-x: hidden;
     }
 
+    .orb {
+      position: fixed;
+      border-radius: 999px;
+      filter: blur(2px);
+      pointer-events: none;
+      z-index: 0;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .orb-a { width: 220px; height: 220px; background: rgba(39, 215, 191, 0.24); top: -50px; left: -50px; }
+    .orb-b { width: 260px; height: 260px; background: rgba(255, 114, 182, 0.2); top: 26%; right: -90px; animation-delay: 1.6s; }
+    .orb-c { width: 200px; height: 200px; background: rgba(101, 168, 255, 0.2); bottom: -60px; left: 25%; animation-delay: 3.1s; }
+
     .container {
-      width: min(1080px, 100% - 40px);
+      position: relative;
+      z-index: 1;
+      width: min(1100px, calc(100% - 32px));
       margin-inline: auto;
+      padding: 28px 0 34px;
     }
 
     .hero {
       text-align: center;
-      padding: 68px 0 36px;
-      animation: fade-up 0.9s ease both;
+      border: 1px solid var(--line);
+      background: linear-gradient(140deg, rgba(255, 255, 255, 0.9), rgba(245, 255, 253, 0.78));
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+      padding: 54px 22px 34px;
+      backdrop-filter: blur(8px);
+      animation: rise 0.7s ease both;
     }
 
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      border: 1px solid #c6f0e8;
-      color: #178979;
+    .spark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       font-size: 0.82rem;
       font-weight: 700;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.4px;
       text-transform: uppercase;
+      color: #0f7d6f;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: linear-gradient(120deg, #ddfff7, #fff2df);
+      border: 1px solid #c9ece5;
     }
 
     h1 {
-      margin: 14px 0 0;
-      font-size: clamp(2rem, 4.6vw, 3.35rem);
-      line-height: 1.07;
-      letter-spacing: -0.6px;
+      margin: 16px 0 10px;
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      line-height: 1.03;
+      letter-spacing: -0.8px;
+      background: linear-gradient(110deg, #16313a, #257c70 58%, #4b79de);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     .lead {
-      margin: 16px auto 0;
+      margin: 0 auto;
       max-width: 860px;
       color: var(--muted);
-      font-size: clamp(1rem, 1.8vw, 1.13rem);
+      font-size: clamp(1rem, 2vw, 1.18rem);
     }
 
     .actions {
       display: flex;
-      gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 26px;
+      gap: 12px;
+      margin-top: 24px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 999px;
       text-decoration: none;
       font-weight: 700;
+      border-radius: 999px;
+      padding: 12px 22px;
       border: 1px solid transparent;
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #b4fff1);
-      color: #083531;
-      box-shadow: 0 8px 22px rgba(31, 202, 182, 0.28);
+    .btn-play {
+      color: #092d29;
+      background: linear-gradient(130deg, #2de1ca, #8ef4e5);
+      box-shadow: 0 12px 26px rgba(45, 225, 202, 0.34);
     }
 
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 26px rgba(31, 202, 182, 0.34);
+    .btn-play:hover { transform: translateY(-2px) scale(1.01); }
+
+    .btn-back {
+      color: #1e5158;
+      background: rgba(255, 255, 255, 0.78);
+      border-color: rgba(93, 133, 145, 0.25);
     }
 
-    .btn-ghost {
-      border-color: #b6ddd7;
-      color: #1a4a47;
-      background: #f3fffc;
+    .stack {
+      margin-top: 18px;
+      display: grid;
+      gap: 18px;
     }
 
     .section {
-      margin: 0 0 22px;
       border: 1px solid var(--line);
-      border-radius: 18px;
-      background: linear-gradient(180deg, #ffffff, #f8fffd);
+      border-radius: 22px;
       padding: 22px;
+      background: var(--card);
       box-shadow: var(--shadow);
-      animation: fade-up 0.9s ease both;
+      backdrop-filter: blur(7px);
+      animation: rise .72s ease both;
     }
 
     .section h2 {
       margin: 0;
-      font-size: 1.4rem;
-      letter-spacing: -0.3px;
+      font-size: 1.45rem;
+      letter-spacing: -0.4px;
     }
 
-    .section-intro {
-      margin: 8px 0 0;
+    .section p.note {
+      margin: 6px 0 0;
       color: var(--muted);
-      font-size: 0.98rem;
-    }
-
-    .chips {
-      margin-top: 16px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .chip {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px;
-      background: var(--card);
-      font-weight: 600;
-    }
-
-    .grid {
-      margin-top: 16px;
-      display: grid;
-      gap: 12px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .item {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px;
-      background: var(--card);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 9px 20px rgba(23, 53, 52, 0.1);
-    }
-
-    .item h3 {
-      margin: 0 0 5px;
       font-size: 1rem;
     }
 
-    .item p {
+    .chips {
+      margin-top: 14px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .chip {
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(93, 133, 145, 0.18);
+      background: linear-gradient(120deg, #ffffff, #f6fffd);
+      font-weight: 700;
+      box-shadow: 0 5px 14px rgba(33, 67, 73, 0.08);
+      transition: transform .18s ease;
+    }
+
+    .chip:hover { transform: translateY(-2px); }
+
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      border-radius: 16px;
+      border: 1px solid rgba(93, 133, 145, 0.18);
+      padding: 14px;
+      background: linear-gradient(145deg, #ffffff, #f8fffd);
+      box-shadow: 0 8px 20px rgba(24, 57, 64, 0.08);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(24, 57, 64, 0.13);
+    }
+
+    .card h3 {
+      margin: 0 0 5px;
+      font-size: 1rem;
+      color: #1d444a;
+    }
+
+    .card p {
       margin: 0;
       color: var(--muted);
-      font-size: 0.94rem;
+      font-size: 0.95rem;
     }
 
     .gallery-title {
       margin: 0;
-      font-size: 1.4rem;
       text-align: center;
+      font-size: 1.45rem;
     }
 
     .gallery {
-      margin-top: 16px;
+      margin-top: 14px;
       display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 
     .shot {
-      border: 1px solid #cae9e3;
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 8px;
-      background: #f6fffc;
+      border: 1px solid rgba(93, 133, 145, 0.2);
+      background: linear-gradient(150deg, rgba(255,255,255,0.95), rgba(236,255,251,0.88));
       box-shadow:
-        0 8px 18px rgba(23, 53, 52, 0.08),
-        0 0 0 1px rgba(34, 199, 183, 0.1),
-        0 0 24px rgba(34, 199, 183, 0.18);
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
+        0 10px 20px rgba(30, 70, 78, 0.1),
+        0 0 0 1px rgba(39, 215, 191, 0.12),
+        0 0 24px rgba(101, 168, 255, 0.18);
+      transition: transform .22s ease, box-shadow .22s ease;
     }
 
     .shot:hover {
-      transform: translateY(-3px) scale(1.01);
+      transform: translateY(-3px) scale(1.02);
       box-shadow:
-        0 12px 24px rgba(23, 53, 52, 0.12),
-        0 0 0 1px rgba(34, 199, 183, 0.18),
-        0 0 34px rgba(34, 199, 183, 0.24);
+        0 14px 24px rgba(30, 70, 78, 0.15),
+        0 0 0 1px rgba(39, 215, 191, 0.2),
+        0 0 32px rgba(255, 114, 182, 0.2);
     }
 
     .shot img {
       width: 100%;
       display: block;
-      border-radius: 10px;
+      border-radius: 11px;
     }
 
     footer {
       text-align: center;
-      color: #62807c;
-      font-size: 0.86rem;
-      padding: 16px 0 30px;
+      color: #5e7881;
+      font-size: 0.88rem;
+      margin-top: 14px;
     }
 
-    @keyframes fade-up {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .section:nth-child(1) { animation-delay: .06s; }
+    .section:nth-child(2) { animation-delay: .12s; }
+    .section:nth-child(3) { animation-delay: .18s; }
+    .section:nth-child(4) { animation-delay: .24s; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @media (max-width: 760px) {
+      .hero { padding: 42px 18px 26px; border-radius: 22px; }
+      .section { padding: 18px; border-radius: 18px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero,
-      .section,
-      .item,
-      .shot,
-      .btn {
-        animation: none;
-        transition: none;
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
       }
     }
   </style>
 </head>
 <body>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="orb orb-c"></div>
+
   <main class="container">
     <section class="hero">
-      <span class="eyebrow">Afirmaciones Positivas Pro</span>
+      <span class="spark">✨ Afirmaciones Positivas Pro</span>
       <h1>Reprograma tu mente y transforma tu vida</h1>
       <p class="lead">
-        Afirmaciones positivas interactivas, audio guiado y una experiencia totalmente personalizable para construir una mentalidad fuerte, enfocada y alineada con tus objetivos.
+        No es solo una app. Es tu espacio diario para construir una mentalidad fuerte, enfocada y alineada con tus objetivos con afirmaciones interactivas y audio guiado.
       </p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.volt.afirmaciones&pli=1" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a>
-        <a class="btn btn-ghost" href="/">Volver a Opusvolt</a>
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.volt.afirmaciones&pli=1" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a>
+        <a class="btn btn-back" href="/">Volver a Opusvolt</a>
       </div>
     </section>
 
-    <section class="section" aria-label="Categorias">
-      <h2>Categorias para cada area de tu vida</h2>
-      <p class="section-intro">Elige la energia que quieres trabajar y enfoca tu practica diaria con intencion.</p>
-      <div class="chips">
-        <div class="chip">Salud</div>
-        <div class="chip">Amor en pareja</div>
-        <div class="chip">Amor para solteros</div>
-        <div class="chip">Universal</div>
-        <div class="chip">Abundancia</div>
-        <div class="chip">Personalizado (crea tus propias afirmaciones)</div>
-      </div>
-    </section>
+    <div class="stack">
+      <section class="section" aria-label="Categorias de la app">
+        <h2>🧠 Categorias para cada area de tu vida</h2>
+        <p class="note">Elige la energia que quieres trabajar hoy y haz que cada sesion tenga direccion.</p>
+        <div class="chips">
+          <div class="chip">💚 Salud</div>
+          <div class="chip">❤️ Amor en pareja</div>
+          <div class="chip">💫 Amor para solteros</div>
+          <div class="chip">🌌 Universal</div>
+          <div class="chip">💰 Abundancia</div>
+          <div class="chip">✨ Personalizado</div>
+        </div>
+      </section>
 
-    <section class="section" aria-label="Audio inmersivo">
-      <h2>Experiencia inmersiva con audio</h2>
-      <div class="grid">
-        <article class="item">
-          <h3>6 frecuencias y sonidos de fondo</h3>
-          <p>Combina ambientes sonoros para entrar mas rapido en estado de enfoque mental.</p>
-        </article>
-        <article class="item">
-          <h3>Voz en off guiada</h3>
-          <p>Escucha afirmaciones estructuradas para sostener ritmo, claridad y presencia.</p>
-        </article>
-        <article class="item">
-          <h3>Pantalla apagada y uso continuo</h3>
-          <p>Ideal para practicar de noche, caminando o durante rutinas sin distracciones.</p>
-        </article>
-      </div>
-    </section>
+      <section class="section" aria-label="Audio inmersivo">
+        <h2>🔊 Experiencia inmersiva con audio</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>🎧 6 frecuencias y sonidos de fondo</h3>
+            <p>Mezcla ambientes para entrar rapido en foco y sostener la energia durante toda la practica.</p>
+          </article>
+          <article class="card">
+            <h3>🔈 Voz en off guiada</h3>
+            <p>Escucha afirmaciones estructuradas para interiorizar mejor cada mensaje positivo.</p>
+          </article>
+          <article class="card">
+            <h3>🌙 Pantalla apagada + modo continuo</h3>
+            <p>Ideal para dormir, caminar o entrenar sin interrupciones ni distracciones visuales.</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="section" aria-label="Funciones unicas">
-      <h2>Funciones que la hacen unica</h2>
-      <div class="grid">
-        <article class="item">
-          <h3>Velocimetro de afirmaciones</h3>
-          <p>Ajusta la intensidad de la practica segun tu momento y nivel de energia.</p>
-        </article>
-        <article class="item">
-          <h3>Comparte afirmaciones</h3>
-          <p>Envialas a quien quieras y multiplica impacto positivo en tu entorno.</p>
-        </article>
-        <article class="item">
-          <h3>Widget de acceso rapido</h3>
-          <p>Abre sesiones en segundos desde la pantalla principal de tu telefono.</p>
-        </article>
-        <article class="item">
-          <h3>Modo claro y oscuro</h3>
-          <p>Una interfaz adaptable para que la experiencia se sienta comoda todo el dia.</p>
-        </article>
-        <article class="item">
-          <h3>Tipografias y fondos editables</h3>
-          <p>Personaliza el estilo visual para conectar mejor con tu proceso.</p>
-        </article>
-        <article class="item">
-          <h3>100% offline</h3>
-          <p>Practica sin internet, en cualquier lugar y con total continuidad.</p>
-        </article>
-      </div>
-    </section>
+      <section class="section" aria-label="Funciones unicas">
+        <h2>🎯 Funciones que la hacen unica</h2>
+        <div class="grid">
+          <article class="card"><h3>📈 Velocimetro de afirmaciones</h3><p>Ajusta ritmo e intensidad para que la practica se adapte a tu momento.</p></article>
+          <article class="card"><h3>📤 Compartir afirmaciones</h3><p>Comparte mensajes con personas cercanas y expande energia positiva.</p></article>
+          <article class="card"><h3>📱 Widget rapido</h3><p>Inicia sesiones en segundos desde la pantalla principal.</p></article>
+          <article class="card"><h3>🌗 Claro y oscuro</h3><p>Interfaz adaptable para cualquier horario y ambiente.</p></article>
+          <article class="card"><h3>🎨 Tipografias y fondos editables</h3><p>Personaliza la experiencia para que conecte contigo de verdad.</p></article>
+          <article class="card"><h3>📶 100% offline</h3><p>Funciona sin internet para que no pierdas constancia nunca.</p></article>
+        </div>
+      </section>
 
-    <section class="section" aria-label="Galeria de la app">
-      <h2 class="gallery-title">Vista previa de la app</h2>
-      <div class="gallery">
-        <div class="shot"><img src="./img/8.png" alt="Captura de Afirmaciones 1" loading="lazy" /></div>
-        <div class="shot"><img src="./img/9.png" alt="Captura de Afirmaciones 2" loading="lazy" /></div>
-        <div class="shot"><img src="./img/10.png" alt="Captura de Afirmaciones 3" loading="lazy" /></div>
-        <div class="shot"><img src="./img/11.png" alt="Captura de Afirmaciones 4" loading="lazy" /></div>
-        <div class="shot"><img src="./img/12.png" alt="Captura de Afirmaciones 5" loading="lazy" /></div>
-        <div class="shot"><img src="./img/13.png" alt="Captura de Afirmaciones 6" loading="lazy" /></div>
-      </div>
-    </section>
+      <section class="section" aria-label="Galeria de la app">
+        <h2 class="gallery-title">✨ Asi se ve Afirmaciones Positivas Pro</h2>
+        <div class="gallery">
+          <div class="shot"><img src="./img/8.png" alt="Captura de Afirmaciones 1" loading="lazy" /></div>
+          <div class="shot"><img src="./img/9.png" alt="Captura de Afirmaciones 2" loading="lazy" /></div>
+          <div class="shot"><img src="./img/10.png" alt="Captura de Afirmaciones 3" loading="lazy" /></div>
+          <div class="shot"><img src="./img/11.png" alt="Captura de Afirmaciones 4" loading="lazy" /></div>
+          <div class="shot"><img src="./img/12.png" alt="Captura de Afirmaciones 5" loading="lazy" /></div>
+          <div class="shot"><img src="./img/13.png" alt="Captura de Afirmaciones 6" loading="lazy" /></div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>© 2026 Opusvolt</footer>
