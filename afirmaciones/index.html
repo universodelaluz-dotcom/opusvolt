@@ -87,6 +87,46 @@
       padding: 22px;
     }
 
+    .gallery-title {
+      margin: 4px 0 0;
+      text-align: center;
+      color: var(--text);
+      font-size: 1.2rem;
+    }
+
+    .gallery {
+      margin-top: 16px;
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .shot {
+      background: #f6fffc;
+      border: 1px solid #cae9e3;
+      border-radius: 14px;
+      padding: 8px;
+      box-shadow:
+        0 8px 18px rgba(23, 53, 52, 0.08),
+        0 0 0 1px rgba(34, 199, 183, 0.12),
+        0 0 24px rgba(34, 199, 183, 0.18);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .shot:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 12px 24px rgba(23, 53, 52, 0.12),
+        0 0 0 1px rgba(34, 199, 183, 0.2),
+        0 0 32px rgba(34, 199, 183, 0.24);
+    }
+
+    .shot img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
     .grid {
       display: grid;
       gap: 14px;
@@ -158,6 +198,18 @@
           <h2>Progreso constante</h2>
           <p>Un enfoque simple para sostener el habito y ver cambios reales con el tiempo.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Galeria de la app">
+      <h2 class="gallery-title">Vista previa de la app</h2>
+      <div class="gallery">
+        <div class="shot"><img src="./img/8.png" alt="Captura de Afirmaciones 1" loading="lazy" /></div>
+        <div class="shot"><img src="./img/9.png" alt="Captura de Afirmaciones 2" loading="lazy" /></div>
+        <div class="shot"><img src="./img/10.png" alt="Captura de Afirmaciones 3" loading="lazy" /></div>
+        <div class="shot"><img src="./img/11.png" alt="Captura de Afirmaciones 4" loading="lazy" /></div>
+        <div class="shot"><img src="./img/12.png" alt="Captura de Afirmaciones 5" loading="lazy" /></div>
+        <div class="shot"><img src="./img/13.png" alt="Captura de Afirmaciones 6" loading="lazy" /></div>
       </div>
     </section>
   </main>
