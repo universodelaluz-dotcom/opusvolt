@@ -3,50 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Opusvolt: tecnología enfocada en el desarrollo mental, emocional y humano." />
+  <meta name="description" content="Opusvolt: tecnologia enfocada en el desarrollo mental, emocional y humano." />
   <title>Opusvolt</title>
 
   <style>
     :root {
-      --bg: #f4fbf9;
-      --panel: #ffffff;
-      --text: #173534;
-      --muted: #547170;
-      --accent: #22c7b7;
-      --accent-2: #14a79a;
-      --line: #d8ebe7;
-      --shadow: 0 12px 30px rgba(23, 53, 52, 0.08);
+      --text: #15313a;
+      --muted: #4d6670;
+      --panel: rgba(255, 255, 255, 0.84);
+      --line: rgba(86, 132, 145, 0.2);
+      --mint: #28d9c0;
+      --cyan: #69beff;
+      --peach: #ffbc76;
+      --pink: #ff75bc;
+      --shadow: 0 18px 44px rgba(31, 57, 66, 0.14);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: "Avenir Next", "Montserrat", "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 20% 0%, #dff6f1 0%, transparent 45%),
-        radial-gradient(circle at 80% 100%, #e7f6ff 0%, transparent 50%),
-        var(--bg);
       color: var(--text);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(40, 217, 192, 0.25), transparent 34%),
+        radial-gradient(circle at 90% 20%, rgba(255, 188, 118, 0.24), transparent 32%),
+        radial-gradient(circle at 70% 88%, rgba(105, 190, 255, 0.22), transparent 36%),
+        linear-gradient(145deg, #eefffb, #fff4ea 52%, #eef4ff);
+      min-height: 100vh;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
+    .orb {
+      position: fixed;
+      border-radius: 999px;
+      pointer-events: none;
+      z-index: 0;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .orb.one { width: 220px; height: 220px; left: -50px; top: -40px; background: rgba(40, 217, 192, 0.24); }
+    .orb.two { width: 240px; height: 240px; right: -90px; top: 30%; background: rgba(255, 117, 188, 0.2); animation-delay: 1.4s; }
+    .orb.three { width: 200px; height: 200px; left: 26%; bottom: -70px; background: rgba(105, 190, 255, 0.22); animation-delay: 2.8s; }
+
     .container {
-      width: min(1000px, 100% - 40px);
+      position: relative;
+      z-index: 1;
+      width: min(1080px, calc(100% - 32px));
       margin-inline: auto;
-      text-align: center;
+    }
+
+    .hero-wrap {
+      margin-top: 18px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(244, 255, 252, 0.78));
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      animation: rise .8s ease both;
     }
 
     .banner {
       display: flex;
       justify-content: center;
-      padding-top: 10px;
+      padding: 14px;
     }
 
     .banner img {
@@ -54,47 +78,58 @@
       max-width: 1000px;
       display: block;
       border-radius: 18px;
-      box-shadow: var(--shadow);
-      border: 1px solid #cfe6e1;
+      box-shadow: 0 18px 34px rgba(24, 57, 64, 0.17);
+      border: 1px solid rgba(86, 132, 145, 0.25);
     }
 
     .intro {
-      padding: 24px 0 28px;
+      text-align: center;
+      padding: 6px 22px 34px;
+      animation: rise 0.9s ease both;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #c7ece5;
+      background: linear-gradient(120deg, #ddfff7, #fff3df);
+      color: #0e7c6f;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
     }
 
     .intro p {
+      margin: 14px auto 0;
       color: var(--muted);
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1rem;
-      letter-spacing: 0.1px;
+      max-width: 760px;
+      font-size: clamp(1rem, 2vw, 1.13rem);
     }
 
     .btn {
       display: inline-block;
-      margin-top: 18px;
-      padding: 12px 22px;
+      margin-top: 20px;
+      padding: 12px 24px;
       border-radius: 999px;
-      border: 0;
-      background: linear-gradient(135deg, var(--accent), #9ffbe8);
-      color: #083531;
+      border: 1px solid transparent;
+      background: linear-gradient(130deg, var(--mint), #8ef4e5);
+      color: #072f2a;
       text-decoration: none;
-      font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-      box-shadow: 0 8px 26px rgba(0, 233, 198, 0.23);
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(40, 217, 192, 0.32);
+      transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .btn:hover,
-    .btn:focus-visible {
-      transform: translateY(-2px);
-      background: linear-gradient(135deg, #38d6c7, #c8fff4);
-      box-shadow: 0 10px 24px rgba(34, 199, 183, 0.28);
-      outline: none;
+    .btn:hover {
+      transform: translateY(-2px) scale(1.01);
+      box-shadow: 0 16px 28px rgba(40, 217, 192, 0.38);
     }
 
-    section {
-      padding: 20px 0;
-    }
+    section { padding: 18px 0; }
 
     .grid,
     .apps-grid {
@@ -103,97 +138,126 @@
     }
 
     .card {
-      background: linear-gradient(180deg, #ffffff 0%, #f8fffd 100%);
-      padding: 18px;
-      border-radius: 14px;
-      text-align: left;
+      background: var(--panel);
       border: 1px solid var(--line);
-      box-shadow: 0 6px 18px rgba(23, 53, 52, 0.07);
+      border-radius: 18px;
+      padding: 18px;
+      text-align: left;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+      transition: transform .2s ease, box-shadow .2s ease;
+      animation: rise .7s ease both;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 30px rgba(24, 57, 64, 0.15);
     }
 
     .card p {
       margin: 0;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.98rem;
     }
 
     .card strong {
       display: inline-block;
       margin-bottom: 6px;
-      color: var(--text);
-      font-size: 1.02rem;
-      letter-spacing: 0.2px;
-    }
-
-    .apps-grid {
-      margin-top: 10px;
+      font-size: 1.07rem;
+      color: #19424b;
     }
 
     .apps-grid .btn {
       margin-top: 14px;
+      background: linear-gradient(130deg, #6ebeff, #b2d8ff);
+      color: #0d2f4b;
+      box-shadow: 0 10px 24px rgba(105, 190, 255, 0.3);
+    }
+
+    .apps-grid .btn:hover {
+      box-shadow: 0 14px 28px rgba(105, 190, 255, 0.38);
+    }
+
+    .apps-grid .card:nth-child(2) {
+      background: linear-gradient(145deg, rgba(255,255,255,0.87), rgba(255,243,229,0.86));
     }
 
     footer {
-      padding: 24px 18px 20px;
+      padding: 20px 0 24px;
       text-align: center;
-      color: #62807c;
-      font-size: 0.85rem;
+      color: #5f7881;
+      font-size: 0.86rem;
     }
 
     @media (min-width: 800px) {
-      .grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      .grid { grid-template-columns: repeat(3, 1fr); }
+      .apps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
 
-      .apps-grid {
-        grid-template-columns: repeat(2, 1fr);
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
       }
     }
   </style>
 </head>
 <body>
-  <header class="banner" aria-label="Banner principal">
-    <img src="./OPUS%203.png" alt="Opusvolt" />
-  </header>
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+  <div class="orb three"></div>
 
-  <main>
-    <section class="intro container" aria-label="Introduccion">
-      <p>Tecnologia enfocada en el desarrollo mental, emocional y humano.</p>
-      <a href="#apps" class="btn">Explorar</a>
-    </section>
+  <main class="container">
+    <div class="hero-wrap">
+      <header class="banner" aria-label="Banner principal">
+        <img src="./OPUS%203.png" alt="Opusvolt" />
+      </header>
+
+      <section class="intro" aria-label="Introduccion">
+        <span class="badge">Tecnologia con proposito</span>
+        <p>Tecnologia enfocada en el desarrollo mental, emocional y humano.</p>
+        <a href="#apps" class="btn">Explorar apps</a>
+      </section>
+    </div>
 
     <section>
-      <div class="container">
-        <div class="grid">
-          <article class="card">
-            <p>Desarrollamos herramientas digitales para enfoque, claridad mental y bienestar.</p>
-          </article>
+      <div class="grid">
+        <article class="card">
+          <p>Desarrollamos herramientas digitales para enfoque, claridad mental y bienestar.</p>
+        </article>
 
-          <article class="card">
-            <p>Buscamos ser referencia en tecnologia aplicada al desarrollo humano.</p>
-          </article>
+        <article class="card">
+          <p>Buscamos ser referencia en tecnologia aplicada al desarrollo humano.</p>
+        </article>
 
-          <article class="card">
-            <p>Creamos productos simples y efectivos que impulsen transformacion real.</p>
-          </article>
-        </div>
+        <article class="card">
+          <p>Creamos productos simples y efectivos que impulsen transformacion real.</p>
+        </article>
       </div>
     </section>
 
     <section id="apps" aria-label="Aplicaciones">
-      <div class="container">
-        <div class="apps-grid">
-          <article class="card">
-            <p><strong>Afirmaciones Positivas Pro</strong></p>
-            <p>Aplicacion enfocada en fortalecer la mentalidad mediante practica diaria.</p>
-            <a href="/afirmaciones/" class="btn">Ver app</a>
-          </article>
+      <div class="apps-grid">
+        <article class="card">
+          <p><strong>Afirmaciones Positivas Pro</strong></p>
+          <p>Aplicacion enfocada en fortalecer la mentalidad mediante practica diaria.</p>
+          <a href="/afirmaciones/" class="btn">Ver app</a>
+        </article>
 
-          <article class="card">
-            <p><strong>Proximamente</strong></p>
-            <p>Nuevas herramientas se integraran al ecosistema Opusvolt.</p>
-          </article>
-        </div>
+        <article class="card">
+          <p><strong>Proximamente</strong></p>
+          <p>Nuevas herramientas se integraran al ecosistema Opusvolt.</p>
+        </article>
       </div>
     </section>
   </main>
@@ -201,5 +265,3 @@
   <footer>© 2026 Opusvolt</footer>
 </body>
 </html>
-
-
