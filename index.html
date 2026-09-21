@@ -1,352 +1,179 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Opusvolt: tecnologia enfocada en el desarrollo mental, emocional y humano." />
-  <title>Opusvolt</title>
+  <title>Opusvolt Labs | AfirmaFlow, 72 Nombres de Dios y Volt Reader</title>
+  <meta name="description" content="Opusvolt Labs: AfirmaFlow, 72 Nombres de Dios y Volt Reader. Apps simples y elegantes para el bienestar, la espiritualidad y la lectura." />
+  <meta name="theme-color" content="#07050d" />
+  <link rel="canonical" href="https://www.opusvoltlabs.com/" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <style>
-    :root {
-      --text: #15313a;
-      --muted: #4d6670;
-      --panel: rgba(255, 255, 255, 0.84);
-      --line: rgba(86, 132, 145, 0.2);
-      --mint: #28d9c0;
-      --cyan: #69beff;
-      --peach: #ffbc76;
-      --pink: #ff75bc;
-      --shadow: 0 18px 44px rgba(31, 57, 66, 0.14);
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Opusvolt Labs" />
+  <meta property="og:title" content="Opusvolt Labs | AfirmaFlow, 72 Nombres de Dios y Volt Reader" />
+  <meta property="og:description" content="AfirmaFlow, 72 Nombres de Dios y Volt Reader: apps para el bienestar, la espiritualidad y la lectura." />
+  <meta property="og:url" content="https://www.opusvoltlabs.com/" />
+  <meta property="og:image" content="https://www.opusvoltlabs.com/OPUS%203.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    * { box-sizing: border-box; }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Opusvolt Labs",
+    "url": "https://www.opusvoltlabs.com/",
+    "logo": "https://www.opusvoltlabs.com/logo.png",
+    "email": "opusvolt@gmail.com",
+    "description": "Tecnología enfocada en el desarrollo mental, emocional y humano."
+  }
+  </script>
 
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: "Avenir Next", "Montserrat", "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 12% 10%, rgba(40, 217, 192, 0.25), transparent 34%),
-        radial-gradient(circle at 90% 20%, rgba(255, 188, 118, 0.24), transparent 32%),
-        radial-gradient(circle at 70% 88%, rgba(105, 190, 255, 0.22), transparent 36%),
-        linear-gradient(145deg, #eefffb, #fff4ea 52%, #eef4ff);
-      min-height: 100vh;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    .orb {
-      position: fixed;
-      border-radius: 999px;
-      pointer-events: none;
-      z-index: 0;
-      animation: float 10s ease-in-out infinite;
-    }
-
-    .orb.one { width: 220px; height: 220px; left: -50px; top: -40px; background: rgba(40, 217, 192, 0.24); }
-    .orb.two { width: 240px; height: 240px; right: -90px; top: 30%; background: rgba(255, 117, 188, 0.2); animation-delay: 1.4s; }
-    .orb.three { width: 200px; height: 200px; left: 26%; bottom: -70px; background: rgba(105, 190, 255, 0.22); animation-delay: 2.8s; }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      width: min(1080px, calc(100% - 32px));
-      margin-inline: auto;
-    }
-
-    .hero-wrap {
-      margin-top: 18px;
-      border-radius: 30px;
-      border: 1px solid var(--line);
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(244, 255, 252, 0.78));
-      backdrop-filter: blur(8px);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      animation: rise .8s ease both;
-    }
-
-    .banner {
-      display: flex;
-      justify-content: center;
-      padding: 14px;
-    }
-
-    .banner img {
-      width: 100%;
-      max-width: 1000px;
-      display: block;
-      border-radius: 18px;
-      box-shadow: 0 18px 34px rgba(24, 57, 64, 0.17);
-      border: 1px solid rgba(86, 132, 145, 0.25);
-    }
-
-    .intro {
-      text-align: center;
-      padding: 6px 22px 34px;
-      animation: rise 0.9s ease both;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid #c7ece5;
-      background: linear-gradient(120deg, #ddfff7, #fff3df);
-      color: #0e7c6f;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.4px;
-    }
-
-    .intro p {
-      margin: 14px auto 0;
-      color: var(--muted);
-      max-width: 760px;
-      font-size: clamp(1rem, 2vw, 1.13rem);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      background: linear-gradient(130deg, var(--mint), #8ef4e5);
-      color: #072f2a;
-      text-decoration: none;
-      font-weight: 800;
-      box-shadow: 0 12px 26px rgba(40, 217, 192, 0.32);
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px) scale(1.01);
-      box-shadow: 0 16px 28px rgba(40, 217, 192, 0.38);
-    }
-
-    section { padding: 18px 0; }
-
-    .grid,
-    .apps-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px;
-      text-align: left;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(6px);
-      transition: transform .2s ease, box-shadow .2s ease;
-      animation: rise .7s ease both;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 30px rgba(24, 57, 64, 0.15);
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
-
-    .card strong {
-      display: inline-block;
-      margin-bottom: 6px;
-      font-size: 1.07rem;
-      color: #19424b;
-    }
-
-    .apps-grid .btn {
-      margin-top: 14px;
-      background: linear-gradient(130deg, #6ebeff, #b2d8ff);
-      color: #0d2f4b;
-      box-shadow: 0 10px 24px rgba(105, 190, 255, 0.3);
-    }
-
-    .apps-grid .btn:hover {
-      box-shadow: 0 14px 28px rgba(105, 190, 255, 0.38);
-    }
-
-    .apps-grid .card:nth-child(2) {
-      background: linear-gradient(145deg, rgba(255,255,255,0.87), rgba(255,243,229,0.86));
-    }
-
-    footer {
-      padding: 20px 0 24px;
-      text-align: center;
-      color: #5f7881;
-      font-size: 0.86rem;
-    }
-
-    .legal-links {
-      margin-top: 8px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .legal-links a {
-      color: #2f6570;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .legal-links a:hover {
-      text-decoration: underline;
-    }
-
-    .cookie-banner {
-      position: fixed;
-      left: 16px;
-      right: 16px;
-      bottom: 16px;
-      z-index: 60;
-      border: 1px solid rgba(86, 132, 145, 0.35);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 14px 32px rgba(24, 57, 64, 0.2);
-      padding: 14px;
-      display: none;
-    }
-
-    .cookie-banner.show {
-      display: block;
-      animation: rise .35s ease both;
-    }
-
-    .cookie-title {
-      margin: 0 0 4px;
-      font-weight: 800;
-      color: #17414a;
-    }
-
-    .cookie-text {
-      margin: 0;
-      color: #4d6670;
-      font-size: 0.9rem;
-    }
-
-    .cookie-actions {
-      margin-top: 10px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .cookie-btn {
-      border: 1px solid rgba(86, 132, 145, 0.3);
-      border-radius: 999px;
-      padding: 8px 14px;
-      background: #fff;
-      color: #17414a;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .cookie-btn.accept {
-      background: linear-gradient(130deg, #2de1ca, #8ef4e5);
-      border-color: transparent;
-      color: #083631;
-    }
-
-    @media (min-width: 800px) {
-      .grid { grid-template-columns: repeat(3, 1fr); }
-      .apps-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes float {
-      0%,100% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/site.css?v=3" />
 </head>
 <body>
-  <div class="orb one"></div>
-  <div class="orb two"></div>
-  <div class="orb three"></div>
-
-  <main class="container">
-    <div class="hero-wrap">
-      <header class="banner" aria-label="Banner principal">
-        <img src="./OPUS%203.png" alt="Opusvolt" />
-      </header>
-
-      <section class="intro" aria-label="Introduccion">
-        <span class="badge">Tecnologia con proposito</span>
-        <p>Tecnologia enfocada en el desarrollo mental, emocional y humano.</p>
-        <a href="#apps" class="btn">Explorar apps</a>
-      </section>
+  <nav class="nav" aria-label="Principal">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Opusvolt Labs, inicio">
+        <img src="/favicon.png" alt="" width="34" height="34" />
+        <span>OPUSVOLT <b>LABS</b></span>
+      </a>
+      <div class="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </div>
     </div>
+  </nav>
 
-    <section>
-      <div class="grid">
-        <article class="card">
-          <p>Desarrollamos herramientas digitales para enfoque, claridad mental y bienestar.</p>
+  <main id="inicio">
+    <header class="hero">
+      <div class="container">
+        <img class="hero-logo" src="/logo.png" alt="Opusvolt Labs" width="220" height="232" />
+        <span class="eyebrow">Tecnología con propósito</span>
+        <h1>Tres apps para <em>tu mente</em> y tu espíritu.</h1>
+        <p class="lead">Herramientas simples y elegantes para el bienestar, la espiritualidad y la lectura, hechas para practicarse cada día.</p>
+        <div class="hero-actions">
+          <a href="#apps" class="btn btn-primary">Conocer las apps</a>
+          <a href="#contacto" class="btn btn-ghost">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Nuestras apps</span>
+          <h2 id="apps-title">Cada una, una práctica distinta.</h2>
+        </div>
+
+        <article class="app reveal" id="afirmaflow">
+          <div class="app-text">
+            <div class="app-head">
+              <img class="app-icon" src="/img/icon-afirmaflow.png" alt="Icono de AfirmaFlow" width="68" height="68" />
+              <div><span class="app-num">01 · Bienestar mental</span><h3>AfirmaFlow</h3></div>
+            </div>
+            <p class="tagline">Tu dosis diaria de calma, enfoque y claridad con afirmaciones positivas, audio inmersivo y práctica constante.</p>
+            <ul class="points">
+              <li>100 % offline, sin internet necesario</li>
+              <li>Se escucha incluso con la pantalla apagada</li>
+              <li>Fuentes, estilos y temas totalmente personalizables</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.volt.afirmaciones" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a>
+              <a class="btn btn-ghost" href="/guias/afirmaflow/">Ver guía de uso</a>
+              <a class="btn btn-ghost" href="/afirmaciones/">Conocer más</a>
+            </div>
+          </div>
+          <div class="shots" aria-label="Capturas de AfirmaFlow">
+            <img class="shot" src="/img/afirmaflow-1.webp" alt="Reproductor de afirmaciones, 100 % offline" width="480" height="853" loading="lazy" />
+            <img class="shot" src="/img/afirmaflow-2.webp" alt="Personalización de fuentes, estilos y temas" width="480" height="853" loading="lazy" />
+            <img class="shot" src="/img/afirmaflow-3.webp" alt="Afirmaciones con la pantalla apagada" width="480" height="853" loading="lazy" />
+          </div>
         </article>
 
-        <article class="card">
-          <p>Buscamos ser referencia en tecnologia aplicada al desarrollo humano.</p>
+        <article class="app gold flip reveal" id="72-nombres">
+          <div class="app-text">
+            <div class="app-head">
+              <img class="app-icon" src="/img/icon-72.png?v=2" alt="Icono de 72 Nombres de Dios" width="68" height="68" />
+              <div><span class="app-num">02 · Cábala y espiritualidad</span><h3>72 Nombres de Dios</h3></div>
+            </div>
+            <p class="tagline">Descubre los 72 Nombres de Dios y conecta cada día con tu ángel protector, desde la sabiduría de la Cábala.</p>
+            <ul class="points">
+              <li>Tu ángel del día, con mensaje y afirmación</li>
+              <li>Descubre el ángel que rige tu fecha de nacimiento</li>
+              <li>Baño de luz: modo meditación en pantalla completa</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.volt.angeles72" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a>
+              <a class="btn btn-ghost" href="/guias/72-nombres-de-dios/">Ver guía de uso</a>
+            </div>
+          </div>
+          <div>
+            <img class="feature-img" src="/img/feature-72.webp" alt="Los 72 Nombres de Dios: cada nombre es una llave" width="1024" height="500" loading="lazy" />
+            <div class="shots duo" aria-label="Capturas de 72 Nombres de Dios">
+              <img class="shot" src="/img/72-1.webp" alt="Pantalla de inicio con el ángel del día" width="390" height="844" loading="lazy" />
+              <img class="shot" src="/img/72-2.webp" alt="Introducción a los 72 Nombres de Dios" width="390" height="844" loading="lazy" />
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <p>Creamos productos simples y efectivos que impulsen transformacion real.</p>
+        <article class="app blue reveal" id="volt-reader">
+          <div class="app-text">
+            <div class="app-head">
+              <img class="app-icon" src="/img/icon-voltreader.png" alt="Icono de Volt Reader" width="68" height="68" />
+              <div><span class="app-num">03 · Lectura</span><h3>Volt Reader</h3></div>
+            </div>
+            <p class="tagline">Tu biblioteca personal en el móvil: lee tus libros en PDF con voz, diccionario y todas las herramientas para estudiar.</p>
+            <ul class="points">
+              <li>Lectura en voz alta y desplazamiento automático</li>
+              <li>Busca palabras, subraya y toma notas mientras lees</li>
+              <li>Estantería de libros y modo oscuro para leer de noche</li>
+            </ul>
+            <div class="hero-actions">
+              <!-- Cuando Volt Reader esté publicada, cambia este span por:
+                   <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.voltpdf.app" target="_blank" rel="noopener noreferrer">Descargar en Google Play</a> -->
+              <span class="badge-soon">Próximamente en Google Play</span>
+              <a class="btn btn-ghost" href="/guias/volt-reader/">Ver guía de uso</a>
+            </div>
+          </div>
+          <div class="shots" aria-label="Capturas de Volt Reader">
+            <img class="shot" src="/img/voltreader-1.webp" alt="Estantería con tus libros" width="480" height="1038" loading="lazy" />
+            <img class="shot" src="/img/voltreader-2.webp" alt="Lectura con controles de voz" width="480" height="1038" loading="lazy" />
+            <img class="shot" src="/img/voltreader-3.webp" alt="Modo oscuro" width="480" height="1038" loading="lazy" />
+          </div>
         </article>
+
       </div>
     </section>
 
-    <section id="apps" aria-label="Aplicaciones">
-      <div class="apps-grid">
-        <article class="card">
-          <p><strong>Afirmaciones Positivas Pro</strong></p>
-          <p>Aplicacion enfocada en fortalecer la mentalidad mediante practica diaria.</p>
-          <a href="/afirmaciones/" class="btn">Ver app</a>
-        </article>
-
-        <article class="card">
-          <p><strong>Proximamente</strong></p>
-          <p>Nuevas herramientas se integraran al ecosistema Opusvolt.</p>
-        </article>
+    <section id="contacto" aria-labelledby="contacto-title" style="padding-top:24px">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 id="contacto-title">¿Dudas, ideas o sugerencias?</h2>
+          <p>Escríbenos. Leemos todos los mensajes y nos ayudan a mejorar cada app.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>© 2026 Opusvolt</div>
-    <div class="legal-links">
-      <a href="/aviso-privacidad.html">Aviso de Privacidad</a>
-      <a href="/politica-cookies.html">Politica de Cookies</a>
-      <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a>
+    <div class="container foot">
+      <div>© 2026 Opusvolt Labs</div>
+      <div class="legal-links">
+        <a href="/aviso-privacidad.html">Aviso de Privacidad</a>
+        <a href="/politica-cookies.html">Política de Cookies</a>
+        <a href="mailto:opusvolt@gmail.com">Contacto</a>
+      </div>
     </div>
   </footer>
 
   <aside class="cookie-banner" id="cookieBanner" aria-label="Aviso de cookies">
     <p class="cookie-title">Uso de cookies</p>
-    <p class="cookie-text">Usamos cookies para mejorar tu experiencia y analizar trafico. Al continuar, aceptas nuestra <a href="/politica-cookies.html">Politica de Cookies</a>.</p>
+    <p class="cookie-text">Usamos cookies para mejorar tu experiencia y analizar tráfico. Al continuar, aceptas nuestra <a href="/politica-cookies.html">Política de Cookies</a>.</p>
     <div class="cookie-actions">
       <button class="cookie-btn accept" id="acceptCookies">Aceptar</button>
       <button class="cookie-btn" id="rejectCookies">Rechazar no esenciales</button>
@@ -359,17 +186,29 @@
       var banner = document.getElementById("cookieBanner");
       var accept = document.getElementById("acceptCookies");
       var reject = document.getElementById("rejectCookies");
-      if (!banner || !accept || !reject) return;
-      var saved = localStorage.getItem(key);
-      if (!saved) banner.classList.add("show");
-      accept.addEventListener("click", function () {
-        localStorage.setItem(key, "accepted");
+      var saved = null;
+      try { saved = localStorage.getItem(key); } catch (e) {}
+      function save(v) {
+        try { localStorage.setItem(key, v); } catch (e) {}
         banner.classList.remove("show");
-      });
-      reject.addEventListener("click", function () {
-        localStorage.setItem(key, "rejected");
-        banner.classList.remove("show");
-      });
+      }
+      if (banner && accept && reject) {
+        if (!saved) banner.classList.add("show");
+        accept.addEventListener("click", function () { save("accepted"); });
+        reject.addEventListener("click", function () { save("rejected"); });
+      }
+
+      var items = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        items.forEach(function (el) { el.classList.add("in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
     })();
   </script>
 </body>
