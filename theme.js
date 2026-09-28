@@ -1,5 +1,5 @@
 /* Tema claro/oscuro. Se carga en <head> para aplicar el tema antes de pintar
-   (sin parpadeo). Claro por defecto; la elección se guarda en el navegador. */
+   (sin parpadeo). Oscuro por defecto; la elección se guarda en el navegador. */
 (function () {
   var KEY = "opusvolt_theme";
   var root = document.documentElement;
@@ -8,10 +8,10 @@
     try { return localStorage.getItem(KEY); } catch (e) { return null; }
   }
   function apply(theme) {
-    if (theme === "dark") root.setAttribute("data-theme", "dark");
-    else root.removeAttribute("data-theme");
+    if (theme === "light") root.removeAttribute("data-theme");
+    else root.setAttribute("data-theme", "dark");
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "dark" ? "#0b1628" : "#ffffff");
+    if (meta) meta.setAttribute("content", theme === "light" ? "#ffffff" : "#0b1628");
   }
 
   apply(saved());
