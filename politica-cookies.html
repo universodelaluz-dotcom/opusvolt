@@ -1,16 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Politica de Cookies de Opusvolt." />
-  <meta name="theme-color" content="#07050d" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <title>Politica de Cookies | Opusvolt</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700&display=swap" />
+  <script src="/theme.js?v=1"></script>
   <style>
-    :root { --bg:#07050d; --surface:rgba(255,255,255,.045); --line:rgba(255,255,255,.1); --text:#f4f1fb; --muted:#a9a3bd; --purple:#a26bff; --green:#3dff5a; }
+    :root { --bg:#ffffff; --surface:#f9fafb; --line:#e5e7eb; --text:#111827; --muted:#4b5563; --purple:#0f2a4f; --green:#0f2a4f; --nav:rgba(255,255,255,.95); color-scheme:light; }
+    :root[data-theme="dark"] { --bg:#0b1628; --surface:#11223c; --line:#1f3558; --text:#f3f5f9; --muted:#a3b1c6; --purple:#9dbbe3; --green:#9dbbe3; --nav:rgba(11,22,40,.95); color-scheme:dark; }
+    h1, h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; }
+    .theme-toggle { display:grid; place-items:center; width:36px; height:36px; padding:0; border-radius:50%; border:1px solid var(--line); background:var(--surface); color:var(--text); cursor:pointer; margin-left:auto; }
+    .theme-toggle svg { width:17px; height:17px; }
+    .theme-toggle .i-sun { display:none; }
+    :root[data-theme="dark"] .theme-toggle .i-sun { display:block; }
+    :root[data-theme="dark"] .theme-toggle .i-moon { display:none; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
     a { color: var(--purple); }
     a:hover { color: var(--green); }
     .wrap { width: min(860px, calc(100% - 32px)); margin: 32px auto 64px; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 30px 28px; }
@@ -22,7 +31,7 @@
 </head>
 <body>
   <main class="wrap">
-    <a class="top" href="/">Volver a inicio</a>
+    <div data-theme-host style="display:flex;align-items:center;gap:12px"><a class="top" href="/" style="margin:0">Volver a inicio</a></div>
     <h1>Politica de Cookies</h1>
     <p>Ultima actualizacion: 11 de mayo de 2026.</p>
     <p>En Opusvolt usamos cookies y tecnologias similares para mejorar la experiencia del sitio, medir rendimiento y optimizar contenido.</p>
