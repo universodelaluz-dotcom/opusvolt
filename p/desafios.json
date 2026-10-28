@@ -12,6 +12,32 @@
       },
       "items": [
         {
+          "code": "xklhjj3tkfg0",
+          "nombre": {
+            "es": "15 días para cuidarme",
+            "en": "15 days to take care of myself",
+            "fr": "15 jours pour prendre soin de moi",
+            "zh": "15天好好照顾自己",
+            "pt": "15 dias para cuidar de mim"
+          },
+          "desc": {
+            "es": "Un gesto de cariño hacia ti cada día.",
+            "en": "One gesture of kindness toward yourself each day.",
+            "fr": "Un geste de tendresse envers toi chaque jour.",
+            "zh": "每天给自己一个温柔的举动。",
+            "pt": "Um gesto de carinho por você a cada dia."
+          },
+          "emoji": "🌸",
+          "n": 15,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
           "code": "74p0bscip0o8",
           "nombre": {
             "es": "7 días de autoestima",
@@ -76,6 +102,32 @@
       },
       "items": [
         {
+          "code": "jhyf2onwvztg",
+          "nombre": {
+            "es": "21 días de presencia y calma",
+            "en": "21 days of presence and calm",
+            "fr": "21 jours de présence et de calme",
+            "zh": "21天正念与平静",
+            "pt": "21 dias de presença e calma"
+          },
+          "desc": {
+            "es": "Un camino suave hacia la atención plena.",
+            "en": "A gentle path to mindfulness.",
+            "fr": "Un doux chemin vers la pleine conscience.",
+            "zh": "走向正念的温柔之路。",
+            "pt": "Um caminho suave rumo à atenção plena."
+          },
+          "emoji": "🧘",
+          "n": 21,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
           "code": "o1pd5d24ou0v",
           "nombre": {
             "es": "7 días de calma",
@@ -139,6 +191,58 @@
         "pt": "Hábitos e energia"
       },
       "items": [
+        {
+          "code": "fsls0ijb71zw",
+          "nombre": {
+            "es": "15 días para moverme más",
+            "en": "15 days to move more",
+            "fr": "15 jours pour bouger plus",
+            "zh": "15天多动起来",
+            "pt": "15 dias para me mexer mais"
+          },
+          "desc": {
+            "es": "Del primer paso a una rutina de movimiento.",
+            "en": "From the first step to a movement routine.",
+            "fr": "Du premier pas à une routine de mouvement.",
+            "zh": "从第一步到养成运动习惯。",
+            "pt": "Do primeiro passo a uma rotina de movimento."
+          },
+          "emoji": "💪",
+          "n": 15,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
+          "code": "rf39g39fwk7v",
+          "nombre": {
+            "es": "21 días para crear un hábito",
+            "en": "21 days to build a habit",
+            "fr": "21 jours pour créer une habitude",
+            "zh": "21天养成一个习惯",
+            "pt": "21 dias para criar um hábito"
+          },
+          "desc": {
+            "es": "Elige uno y hazlo crecer día a día.",
+            "en": "Pick one and grow it day by day.",
+            "fr": "Choisis-en un et fais-le grandir jour après jour.",
+            "zh": "选一个习惯，每天让它长大。",
+            "pt": "Escolha um e faça-o crescer dia a dia."
+          },
+          "emoji": "🌱",
+          "n": 21,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
         {
           "code": "ekl4ezwhzu8z",
           "nombre": {
@@ -230,6 +334,32 @@
       },
       "items": [
         {
+          "code": "lzd5i3inlxnm",
+          "nombre": {
+            "es": "15 días de orden",
+            "en": "15 days of order",
+            "fr": "15 jours d'ordre",
+            "zh": "15天整理计划",
+            "pt": "15 dias de organização"
+          },
+          "desc": {
+            "es": "Despeja tu espacio y tu mente, un rincón al día.",
+            "en": "Clear your space and mind, one corner a day.",
+            "fr": "Dégage ton espace et ton esprit, un coin par jour.",
+            "zh": "每天整理一个角落，清爽空间与心情。",
+            "pt": "Limpe seu espaço e sua mente, um canto por dia."
+          },
+          "emoji": "🧹",
+          "n": 15,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
           "code": "m6au0wu3s6nc",
           "nombre": {
             "es": "7 días de enfoque",
@@ -247,6 +377,44 @@
           },
           "emoji": "🎯",
           "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exito_y_abundancia",
+      "nombre": {
+        "es": "Éxito y abundancia",
+        "en": "Success and abundance",
+        "fr": "Réussite et abondance",
+        "zh": "成功与丰盛",
+        "pt": "Sucesso e abundância"
+      },
+      "items": [
+        {
+          "code": "zk326w0xwl9m",
+          "nombre": {
+            "es": "21 días de abundancia",
+            "en": "21 days of abundance",
+            "fr": "21 jours d'abondance",
+            "zh": "21天丰盛计划",
+            "pt": "21 dias de abundância"
+          },
+          "desc": {
+            "es": "Mentalidad y hábitos para una vida más próspera.",
+            "en": "Mindset and habits for a more prosperous life.",
+            "fr": "État d'esprit et habitudes pour une vie plus prospère.",
+            "zh": "为更丰盛的生活培养心态与习惯。",
+            "pt": "Mentalidade e hábitos para uma vida mais próspera."
+          },
+          "emoji": "💰",
+          "n": 21,
           "idiomas": [
             "es",
             "en",
