@@ -1,0 +1,261 @@
+{
+  "v": 1,
+  "secciones": [
+    {
+      "id": "amor_propio",
+      "nombre": {
+        "es": "Amor propio",
+        "en": "Self-love",
+        "fr": "Amour de soi",
+        "zh": "爱自己",
+        "pt": "Amor-próprio"
+      },
+      "items": [
+        {
+          "code": "74p0bscip0o8",
+          "nombre": {
+            "es": "7 días de autoestima",
+            "en": "7 days of self-esteem",
+            "fr": "7 jours d'estime de soi",
+            "zh": "7天自信计划",
+            "pt": "7 dias de autoestima"
+          },
+          "desc": {
+            "es": "Habla y trátate como a alguien que quieres.",
+            "en": "Speak to and treat yourself like someone you love.",
+            "fr": "Parle-toi et traite-toi comme quelqu'un que tu aimes.",
+            "zh": "像对待所爱的人一样对待自己。",
+            "pt": "Fale e trate a si mesmo como alguém que ama."
+          },
+          "emoji": "💎",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
+          "code": "y4ejhm007hvl",
+          "nombre": {
+            "es": "7 días para soltar y perdonar",
+            "en": "7 days to let go and forgive",
+            "fr": "7 jours pour lâcher prise et pardonner",
+            "zh": "7天放下与原谅",
+            "pt": "7 dias para soltar e perdoar"
+          },
+          "desc": {
+            "es": "Aligera el corazón, a tu ritmo.",
+            "en": "Lighten your heart, at your own pace.",
+            "fr": "Allège ton cœur, à ton rythme.",
+            "zh": "按自己的节奏，让心轻一点。",
+            "pt": "Alivie o coração, no seu ritmo."
+          },
+          "emoji": "🕊️",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calma_y_emociones",
+      "nombre": {
+        "es": "Calma y emociones",
+        "en": "Calm and emotions",
+        "fr": "Calme et émotions",
+        "zh": "平静与情绪",
+        "pt": "Calma e emoções"
+      },
+      "items": [
+        {
+          "code": "o1pd5d24ou0v",
+          "nombre": {
+            "es": "7 días de calma",
+            "en": "7 days of calm",
+            "fr": "7 jours de calme",
+            "zh": "7天平静计划",
+            "pt": "7 dias de calma"
+          },
+          "desc": {
+            "es": "Pequeños gestos diarios para bajar el ritmo.",
+            "en": "Small daily gestures to slow down.",
+            "fr": "De petits gestes quotidiens pour ralentir.",
+            "zh": "每天一点小行动，让节奏慢下来。",
+            "pt": "Pequenos gestos diários para desacelerar."
+          },
+          "emoji": "🌿",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
+          "code": "9t87ljrnywz6",
+          "nombre": {
+            "es": "7 días de gratitud",
+            "en": "7 days of gratitude",
+            "fr": "7 jours de gratitude",
+            "zh": "7天感恩计划",
+            "pt": "7 dias de gratidão"
+          },
+          "desc": {
+            "es": "Cierra cada día viendo lo bueno.",
+            "en": "End each day seeing the good.",
+            "fr": "Termine chaque jour en voyant le bon.",
+            "zh": "每天结束时，看见美好。",
+            "pt": "Termine cada dia vendo o que é bom."
+          },
+          "emoji": "🙏",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "habitos_y_energia",
+      "nombre": {
+        "es": "Hábitos y energía",
+        "en": "Habits and energy",
+        "fr": "Habitudes et énergie",
+        "zh": "习惯与能量",
+        "pt": "Hábitos e energia"
+      },
+      "items": [
+        {
+          "code": "ekl4ezwhzu8z",
+          "nombre": {
+            "es": "7 días con menos celular",
+            "en": "7 days with less phone",
+            "fr": "7 jours avec moins de téléphone",
+            "zh": "7天减少手机使用",
+            "pt": "7 dias com menos celular"
+          },
+          "desc": {
+            "es": "Recupera tu atención y tu tiempo.",
+            "en": "Take back your attention and time.",
+            "fr": "Reprends ton attention et ton temps.",
+            "zh": "找回你的注意力和时间。",
+            "pt": "Recupere sua atenção e seu tempo."
+          },
+          "emoji": "📵",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
+          "code": "swwg4f3g5tmd",
+          "nombre": {
+            "es": "7 días de agua y cuerpo",
+            "en": "7 days of water and body",
+            "fr": "7 jours d'eau et de corps",
+            "zh": "7天喝水与身体计划",
+            "pt": "7 dias de água e corpo"
+          },
+          "desc": {
+            "es": "Hidrátate y muévete un poco más cada día.",
+            "en": "Hydrate and move a little more each day.",
+            "fr": "Hydrate-toi et bouge un peu plus chaque jour.",
+            "zh": "每天多喝水、多活动一点。",
+            "pt": "Hidrate-se e mexa-se um pouco mais a cada dia."
+          },
+          "emoji": "💧",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        },
+        {
+          "code": "tp8fw074dazg",
+          "nombre": {
+            "es": "7 días para dormir mejor",
+            "en": "7 days to sleep better",
+            "fr": "7 jours pour mieux dormir",
+            "zh": "7天睡好觉计划",
+            "pt": "7 dias para dormir melhor"
+          },
+          "desc": {
+            "es": "Una rutina suave para soltar el día.",
+            "en": "A gentle routine to let go of the day.",
+            "fr": "Une routine douce pour lâcher la journée.",
+            "zh": "用温和的习惯放下一天的疲惫。",
+            "pt": "Uma rotina suave para soltar o dia."
+          },
+          "emoji": "🌙",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mente_y_enfoque",
+      "nombre": {
+        "es": "Mente y enfoque",
+        "en": "Mind and focus",
+        "fr": "Esprit et concentration",
+        "zh": "心智与专注",
+        "pt": "Mente e foco"
+      },
+      "items": [
+        {
+          "code": "m6au0wu3s6nc",
+          "nombre": {
+            "es": "7 días de enfoque",
+            "en": "7 days of focus",
+            "fr": "7 jours de concentration",
+            "zh": "7天专注计划",
+            "pt": "7 dias de foco"
+          },
+          "desc": {
+            "es": "Una cosa a la vez, con atención clara.",
+            "en": "One thing at a time, with clear attention.",
+            "fr": "Une chose à la fois, avec une attention claire.",
+            "zh": "一次只做一件事，保持专注。",
+            "pt": "Uma coisa de cada vez, com atenção clara."
+          },
+          "emoji": "🎯",
+          "n": 7,
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,61 +3,219 @@
   "secciones": [
     {
       "id": "espiritual_y_metafisico",
-      "nombre": "Espiritual y metafísico",
+      "nombre": {
+        "es": "Espiritual y metafísico",
+        "en": "Spiritual and metaphysical",
+        "fr": "Spirituel et métaphysique",
+        "zh": "灵性与形而上",
+        "pt": "Espiritual e metafísico"
+      },
       "items": [
         {
           "code": "zdngy2jnahts",
-          "nombre": "Conexión con el universo",
-          "desc": "Sentirme parte de algo más grande.",
+          "nombre": {
+            "es": "Conexión con el universo",
+            "en": "Connection with the universe",
+            "fr": "Connexion à l'univers",
+            "zh": "与宇宙连接",
+            "pt": "Conexão com o universo"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Sentirme parte de algo más grande.",
+            "en": "Feel part of something bigger.",
+            "fr": "Me sentir partie de quelque chose de plus grand.",
+            "zh": "感受自己是更大整体的一部分。",
+            "pt": "Sentir-me parte de algo maior."
+          },
           "emoji": "🌌",
           "n": 88
         },
         {
           "code": "zwdwu3b4v0w6",
-          "nombre": "Energía y chakras",
-          "desc": "Equilibrio y vitalidad interior.",
+          "nombre": {
+            "es": "Energía y chakras",
+            "en": "Energy and chakras",
+            "fr": "Énergie et chakras",
+            "zh": "能量与脉轮",
+            "pt": "Energia e chakras"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Equilibrio y vitalidad interior.",
+            "en": "Inner balance and vitality.",
+            "fr": "Équilibre et vitalité intérieurs.",
+            "zh": "内在的平衡与活力。",
+            "pt": "Equilíbrio e vitalidade interior."
+          },
           "emoji": "🌈",
           "n": 92
         },
         {
           "code": "9fpoibz3zvn8",
-          "nombre": "Gratitud",
-          "desc": "Ver lo bueno de cada día.",
+          "nombre": {
+            "es": "Gratitud",
+            "en": "Gratitude",
+            "fr": "Gratitude",
+            "zh": "感恩",
+            "pt": "Gratidão"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Ver lo bueno de cada día.",
+            "en": "See the good in every day.",
+            "fr": "Voir le bon de chaque jour.",
+            "zh": "看见每一天的美好。",
+            "pt": "Ver o que é bom em cada dia."
+          },
           "emoji": "🙏",
           "n": 96
         },
         {
           "code": "1bp6lwft2bd2",
-          "nombre": "Intuición y confianza en la vida",
-          "desc": "Escuchar mi voz interior.",
+          "nombre": {
+            "es": "Intuición y confianza en la vida",
+            "en": "Intuition and trust in life",
+            "fr": "Intuition et confiance en la vie",
+            "zh": "直觉与对生命的信任",
+            "pt": "Intuição e confiança na vida"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Escuchar mi voz interior.",
+            "en": "Listen to my inner voice.",
+            "fr": "Écouter ma voix intérieure.",
+            "zh": "倾听内心的声音。",
+            "pt": "Ouvir minha voz interior."
+          },
           "emoji": "🔮",
           "n": 83
         },
         {
           "code": "e915t4pj85g3",
-          "nombre": "Ley de atracción",
-          "desc": "Pensamientos y emociones que crean mi realidad.",
+          "nombre": {
+            "es": "Ley de atracción",
+            "en": "Law of attraction",
+            "fr": "Loi de l'attraction",
+            "zh": "吸引力法则",
+            "pt": "Lei da atração"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Pensamientos y emociones que crean mi realidad.",
+            "en": "Thoughts and emotions that shape my reality.",
+            "fr": "Pensées et émotions qui créent ma réalité.",
+            "zh": "思想与情绪塑造我的现实。",
+            "pt": "Pensamentos e emoções que criam minha realidade."
+          },
           "emoji": "🧲",
           "n": 99
         },
         {
           "code": "96h1e1sp1rbi",
-          "nombre": "Luz interior y ángeles",
-          "desc": "Mi luz y la compañía que me cuida.",
+          "nombre": {
+            "es": "Luz interior y ángeles",
+            "en": "Inner light and angels",
+            "fr": "Lumière intérieure et anges",
+            "zh": "内在之光与天使",
+            "pt": "Luz interior e anjos"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Mi luz y la compañía que me cuida.",
+            "en": "My light and the company that watches over me.",
+            "fr": "Ma lumière et la présence qui veille sur moi.",
+            "zh": "我的光，以及守护我的陪伴。",
+            "pt": "Minha luz e a companhia que cuida de mim."
+          },
           "emoji": "✨",
           "n": 88
         },
         {
           "code": "538zec4y02is",
-          "nombre": "Meditación y presencia",
-          "desc": "Volver al aquí y al ahora.",
+          "nombre": {
+            "es": "Meditación y presencia",
+            "en": "Meditation and presence",
+            "fr": "Méditation et présence",
+            "zh": "冥想与当下",
+            "pt": "Meditação e presença"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Volver al aquí y al ahora.",
+            "en": "Return to the here and now.",
+            "fr": "Revenir à l'ici et maintenant.",
+            "zh": "回到此时此刻。",
+            "pt": "Voltar ao aqui e agora."
+          },
           "emoji": "🧘",
           "n": 97
         },
         {
           "code": "9bpnhb49bgfx",
-          "nombre": "Protección y limpieza energética",
-          "desc": "Cuidar mi espacio y mi energía.",
+          "nombre": {
+            "es": "Protección y limpieza energética",
+            "en": "Protection and energy cleansing",
+            "fr": "Protection et nettoyage énergétique",
+            "zh": "保护与能量净化",
+            "pt": "Proteção e limpeza energética"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Cuidar mi espacio y mi energía.",
+            "en": "Care for my space and my energy.",
+            "fr": "Prendre soin de mon espace et de mon énergie.",
+            "zh": "守护我的空间与能量。",
+            "pt": "Cuidar do meu espaço e da minha energia."
+          },
           "emoji": "🛡️",
           "n": 88
         }
@@ -65,54 +223,193 @@
     },
     {
       "id": "habitos_y_rendimiento",
-      "nombre": "Hábitos y rendimiento",
+      "nombre": {
+        "es": "Hábitos y rendimiento",
+        "en": "Habits and performance",
+        "fr": "Habitudes et performance",
+        "zh": "习惯与效率",
+        "pt": "Hábitos e desempenho"
+      },
       "items": [
         {
           "code": "1r811f46o65e",
-          "nombre": "Concentración y enfoque",
-          "desc": "Atención clara, una cosa a la vez.",
+          "nombre": {
+            "es": "Concentración y enfoque",
+            "en": "Concentration and focus",
+            "fr": "Concentration et attention",
+            "zh": "专注力",
+            "pt": "Concentração e foco"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Atención clara, una cosa a la vez.",
+            "en": "Clear attention, one thing at a time.",
+            "fr": "Une attention claire, une chose à la fois.",
+            "zh": "清晰的注意力，一次一件事。",
+            "pt": "Atenção clara, uma coisa de cada vez."
+          },
           "emoji": "🎯",
           "n": 120
         },
         {
           "code": "9pthz367898o",
-          "nombre": "Dejar de postergar",
-          "desc": "Empezar ahora, paso a paso.",
+          "nombre": {
+            "es": "Dejar de postergar",
+            "en": "Stop procrastinating",
+            "fr": "Arrêter de procrastiner",
+            "zh": "告别拖延",
+            "pt": "Parar de procrastinar"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Empezar ahora, paso a paso.",
+            "en": "Start now, step by step.",
+            "fr": "Commencer maintenant, pas à pas.",
+            "zh": "现在就开始，一步一步来。",
+            "pt": "Começar agora, passo a passo."
+          },
           "emoji": "⏱️",
           "n": 113
         },
         {
           "code": "r0fbm55z2v03",
-          "nombre": "Despertar con energía",
-          "desc": "Empezar el día con ánimo.",
+          "nombre": {
+            "es": "Despertar con energía",
+            "en": "Waking up with energy",
+            "fr": "Se réveiller plein d'énergie",
+            "zh": "元气满满地醒来",
+            "pt": "Acordar com energia"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Empezar el día con ánimo.",
+            "en": "Start the day with spirit.",
+            "fr": "Commencer la journée avec entrain.",
+            "zh": "带着活力开启新的一天。",
+            "pt": "Começar o dia com ânimo."
+          },
           "emoji": "🌅",
           "n": 125
         },
         {
           "code": "d2n0oj0k8aay",
-          "nombre": "Disciplina y constancia",
-          "desc": "Pequeños pasos cada día.",
+          "nombre": {
+            "es": "Disciplina y constancia",
+            "en": "Discipline and consistency",
+            "fr": "Discipline et constance",
+            "zh": "自律与坚持",
+            "pt": "Disciplina e constância"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Pequeños pasos cada día.",
+            "en": "Small steps every day.",
+            "fr": "De petits pas chaque jour.",
+            "zh": "每天迈出小小的一步。",
+            "pt": "Pequenos passos todos os dias."
+          },
           "emoji": "🏋️",
           "n": 104
         },
         {
           "code": "naatefvht70x",
-          "nombre": "Dormir mejor",
-          "desc": "Soltar el día y descansar.",
+          "nombre": {
+            "es": "Dormir mejor",
+            "en": "Sleeping better",
+            "fr": "Mieux dormir",
+            "zh": "睡个好觉",
+            "pt": "Dormir melhor"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Soltar el día y descansar.",
+            "en": "Let go of the day and rest.",
+            "fr": "Lâcher la journée et se reposer.",
+            "zh": "放下这一天，好好休息。",
+            "pt": "Soltar o dia e descansar."
+          },
           "emoji": "🌙",
           "n": 102
         },
         {
           "code": "p9l4vbc4th7q",
-          "nombre": "Examen, entrevista o hablar en público",
-          "desc": "Calma y confianza para el gran momento.",
+          "nombre": {
+            "es": "Examen, entrevista o hablar en público",
+            "en": "Exam, interview or public speaking",
+            "fr": "Examen, entretien ou prise de parole",
+            "zh": "考试、面试或公开演讲",
+            "pt": "Prova, entrevista ou falar em público"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Calma y confianza para el gran momento.",
+            "en": "Calm and confidence for the big moment.",
+            "fr": "Calme et confiance pour le grand moment.",
+            "zh": "为重要时刻带来平静与自信。",
+            "pt": "Calma e confiança para o grande momento."
+          },
           "emoji": "📝",
           "n": 90
         },
         {
           "code": "feu87g7aj6sm",
-          "nombre": "Menos celular y redes",
-          "desc": "Recuperar mi atención y mi tiempo.",
+          "nombre": {
+            "es": "Menos celular y redes",
+            "en": "Less phone and social media",
+            "fr": "Moins de téléphone et de réseaux",
+            "zh": "少用手机和社交媒体",
+            "pt": "Menos celular e redes"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Recuperar mi atención y mi tiempo.",
+            "en": "Take back my attention and time.",
+            "fr": "Reprendre mon attention et mon temps.",
+            "zh": "找回我的注意力和时间。",
+            "pt": "Recuperar minha atenção e meu tempo."
+          },
           "emoji": "📵",
           "n": 96
         }
@@ -120,26 +417,89 @@
     },
     {
       "id": "amor_y_relaciones",
-      "nombre": "Amor y relaciones",
+      "nombre": {
+        "es": "Amor y relaciones",
+        "en": "Love and relationships",
+        "fr": "Amour et relations",
+        "zh": "爱与关系",
+        "pt": "Amor e relacionamentos"
+      },
       "items": [
         {
           "code": "3d6205hesuhp",
-          "nombre": "Amor en pareja",
-          "desc": "Cuidar y fortalecer el vínculo.",
+          "nombre": {
+            "es": "Amor en pareja",
+            "en": "Love as a couple",
+            "fr": "L'amour en couple",
+            "zh": "伴侣之爱",
+            "pt": "Amor a dois"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Cuidar y fortalecer el vínculo.",
+            "en": "Care for and strengthen the bond.",
+            "fr": "Prendre soin du lien et le renforcer.",
+            "zh": "呵护并加深彼此的联结。",
+            "pt": "Cuidar e fortalecer o vínculo."
+          },
           "emoji": "💑",
           "n": 84
         },
         {
           "code": "pmj1ki5ydea8",
-          "nombre": "Atraer una relación sana",
-          "desc": "Abrirme a un amor que me valore.",
+          "nombre": {
+            "es": "Atraer una relación sana",
+            "en": "Attracting a healthy relationship",
+            "fr": "Attirer une relation saine",
+            "zh": "吸引健康的感情",
+            "pt": "Atrair um relacionamento saudável"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Abrirme a un amor que me valore.",
+            "en": "Open to a love that values me.",
+            "fr": "M'ouvrir à un amour qui me valorise.",
+            "zh": "向珍视我的爱敞开。",
+            "pt": "Abrir-me a um amor que me valorize."
+          },
           "emoji": "💞",
           "n": 86
         },
         {
           "code": "a0kmh3mcie95",
-          "nombre": "Paz en la familia y el hogar",
-          "desc": "Armonía y respeto en casa.",
+          "nombre": {
+            "es": "Paz en la familia y el hogar",
+            "en": "Peace in the family and home",
+            "fr": "Paix en famille et à la maison",
+            "zh": "家庭与家园的平安",
+            "pt": "Paz na família e no lar"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Armonía y respeto en casa.",
+            "en": "Harmony and respect at home.",
+            "fr": "Harmonie et respect chez soi.",
+            "zh": "家中的和谐与尊重。",
+            "pt": "Harmonia e respeito em casa."
+          },
           "emoji": "🏡",
           "n": 88
         }
@@ -147,61 +507,219 @@
     },
     {
       "id": "sanar_y_soltar",
-      "nombre": "Sanar y soltar",
+      "nombre": {
+        "es": "Sanar y soltar",
+        "en": "Heal and let go",
+        "fr": "Guérir et lâcher prise",
+        "zh": "疗愈与放下",
+        "pt": "Curar e soltar"
+      },
       "items": [
         {
           "code": "8lifesd6xscm",
-          "nombre": "Pasar un duelo o una pérdida",
-          "desc": "Compañía para despedir a quien amas.",
+          "nombre": {
+            "es": "Pasar un duelo o una pérdida",
+            "en": "Grief and loss",
+            "fr": "Deuil et perte",
+            "zh": "哀伤与失去",
+            "pt": "Luto e perda"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Compañía para despedir a quien amas.",
+            "en": "Company as you say goodbye to someone you love.",
+            "fr": "De la compagnie pour dire adieu à un être cher.",
+            "zh": "在送别所爱之人时的陪伴。",
+            "pt": "Companhia para despedir-se de quem você ama."
+          },
           "emoji": "🕯️",
           "n": 116
         },
         {
           "code": "fukvs67adm9x",
-          "nombre": "Perdonar y soltar el rencor",
-          "desc": "Liberar el corazón de lo que pesa.",
+          "nombre": {
+            "es": "Perdonar y soltar el rencor",
+            "en": "Forgiving and releasing resentment",
+            "fr": "Pardonner et lâcher la rancune",
+            "zh": "原谅并放下怨恨",
+            "pt": "Perdoar e soltar o rancor"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Liberar el corazón de lo que pesa.",
+            "en": "Free the heart from what weighs on it.",
+            "fr": "Libérer le cœur de ce qui pèse.",
+            "zh": "让心灵卸下沉重。",
+            "pt": "Libertar o coração do que pesa."
+          },
           "emoji": "🤍",
           "n": 123
         },
         {
           "code": "c8j1z6u6odfc",
-          "nombre": "Sanar a mi niño interior",
-          "desc": "Cuidar y abrazar a la niña o el niño que fui.",
+          "nombre": {
+            "es": "Sanar a mi niño interior",
+            "en": "Healing my inner child",
+            "fr": "Guérir mon enfant intérieur",
+            "zh": "疗愈内在小孩",
+            "pt": "Curar minha criança interior"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Cuidar y abrazar a la niña o el niño que fui.",
+            "en": "Care for and hold the child I was.",
+            "fr": "Prendre soin de l'enfant que j'ai été.",
+            "zh": "照顾并拥抱曾经的那个孩子。",
+            "pt": "Cuidar e abraçar a criança que fui."
+          },
           "emoji": "🧸",
           "n": 112
         },
         {
           "code": "43hmol131tzr",
-          "nombre": "Soledad",
-          "desc": "Acompañarme y abrirme a la conexión.",
+          "nombre": {
+            "es": "Soledad",
+            "en": "Loneliness",
+            "fr": "Solitude",
+            "zh": "孤独",
+            "pt": "Solidão"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Acompañarme y abrirme a la conexión.",
+            "en": "Keep myself company and open to connection.",
+            "fr": "Me tenir compagnie et m'ouvrir aux autres.",
+            "zh": "陪伴自己，敞开心扉去连接。",
+            "pt": "Fazer-me companhia e abrir-me à conexão."
+          },
           "emoji": "🫂",
           "n": 123
         },
         {
           "code": "40jkg8xoa4is",
-          "nombre": "Soltar el pasado",
-          "desc": "Cerrar capítulos y vivir el presente.",
+          "nombre": {
+            "es": "Soltar el pasado",
+            "en": "Letting go of the past",
+            "fr": "Lâcher le passé",
+            "zh": "放下过去",
+            "pt": "Soltar o passado"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Cerrar capítulos y vivir el presente.",
+            "en": "Close chapters and live in the present.",
+            "fr": "Fermer des chapitres et vivre le présent.",
+            "zh": "合上旧篇章，活在当下。",
+            "pt": "Fechar capítulos e viver o presente."
+          },
           "emoji": "🍂",
           "n": 106
         },
         {
           "code": "j4uywppm2u85",
-          "nombre": "Soltar la culpa",
-          "desc": "Perdonarme y seguir adelante.",
+          "nombre": {
+            "es": "Soltar la culpa",
+            "en": "Letting go of guilt",
+            "fr": "Lâcher la culpabilité",
+            "zh": "放下内疚",
+            "pt": "Soltar a culpa"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Perdonarme y seguir adelante.",
+            "en": "Forgive myself and move on.",
+            "fr": "Me pardonner et avancer.",
+            "zh": "原谅自己，继续前行。",
+            "pt": "Perdoar-me e seguir em frente."
+          },
           "emoji": "🕊️",
           "n": 138
         },
         {
           "code": "k3oxod9c1907",
-          "nombre": "Superar una ruptura",
-          "desc": "Sanar y volver a mí después de una despedida.",
+          "nombre": {
+            "es": "Superar una ruptura",
+            "en": "Getting over a breakup",
+            "fr": "Surmonter une rupture",
+            "zh": "走出分手",
+            "pt": "Superar um término"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Sanar y volver a mí después de una despedida.",
+            "en": "Heal and come back to myself after a goodbye.",
+            "fr": "Guérir et me retrouver après un adieu.",
+            "zh": "在告别之后疗愈并回到自己。",
+            "pt": "Curar e voltar a mim depois de uma despedida."
+          },
           "emoji": "💔",
           "n": 139
         },
         {
           "code": "co511jfx8zsl",
-          "nombre": "Superar una traición",
-          "desc": "Recuperar la confianza en mí.",
+          "nombre": {
+            "es": "Superar una traición",
+            "en": "Overcoming betrayal",
+            "fr": "Surmonter une trahison",
+            "zh": "走出背叛",
+            "pt": "Superar uma traição"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Recuperar la confianza en mí.",
+            "en": "Regain trust in myself.",
+            "fr": "Retrouver confiance en moi.",
+            "zh": "重新找回对自己的信任。",
+            "pt": "Recuperar a confiança em mim."
+          },
           "emoji": "🩹",
           "n": 98
         }
@@ -209,47 +727,167 @@
     },
     {
       "id": "amor_propio",
-      "nombre": "Amor propio",
+      "nombre": {
+        "es": "Amor propio",
+        "en": "Self-love",
+        "fr": "Amour de soi",
+        "zh": "爱自己",
+        "pt": "Amor-próprio"
+      },
       "items": [
         {
           "code": "z36tlay6be7i",
-          "nombre": "Aceptar mi cuerpo",
-          "desc": "Mirarme y tratarme con cariño.",
+          "nombre": {
+            "es": "Aceptar mi cuerpo",
+            "en": "Accepting my body",
+            "fr": "Accepter mon corps",
+            "zh": "接纳我的身体",
+            "pt": "Aceitar meu corpo"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Mirarme y tratarme con cariño.",
+            "en": "Look at and treat myself with kindness.",
+            "fr": "Me regarder et me traiter avec bienveillance.",
+            "zh": "用善意看待并对待自己。",
+            "pt": "Olhar-me e tratar-me com carinho."
+          },
           "emoji": "🪞",
           "n": 138
         },
         {
           "code": "7zltrnkebnl1",
-          "nombre": "Autoestima",
-          "desc": "Recordar cuánto valgo.",
+          "nombre": {
+            "es": "Autoestima",
+            "en": "Self-esteem",
+            "fr": "Estime de soi",
+            "zh": "自尊自信",
+            "pt": "Autoestima"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Recordar cuánto valgo.",
+            "en": "Remember how much I'm worth.",
+            "fr": "Me rappeler ma valeur.",
+            "zh": "记起自己的价值。",
+            "pt": "Lembrar quanto eu valho."
+          },
           "emoji": "💎",
           "n": 118
         },
         {
           "code": "72uky9wca9bs",
-          "nombre": "Dejar de compararme",
-          "desc": "Mi camino es único.",
+          "nombre": {
+            "es": "Dejar de compararme",
+            "en": "Stop comparing myself",
+            "fr": "Arrêter de me comparer",
+            "zh": "不再与人比较",
+            "pt": "Parar de me comparar"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Mi camino es único.",
+            "en": "My path is unique.",
+            "fr": "Mon chemin est unique.",
+            "zh": "我的道路独一无二。",
+            "pt": "Meu caminho é único."
+          },
           "emoji": "🌱",
           "n": 100
         },
         {
           "code": "gh04n18idv2g",
-          "nombre": "Poner límites y decir no",
-          "desc": "Cuidar mi tiempo y mi energía.",
+          "nombre": {
+            "es": "Poner límites y decir no",
+            "en": "Setting limits and saying no",
+            "fr": "Poser des limites et dire non",
+            "zh": "设立界限，学会说不",
+            "pt": "Pôr limites e dizer não"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Cuidar mi tiempo y mi energía.",
+            "en": "Protect my time and energy.",
+            "fr": "Protéger mon temps et mon énergie.",
+            "zh": "守护我的时间与精力。",
+            "pt": "Cuidar do meu tempo e da minha energia."
+          },
           "emoji": "🚧",
           "n": 102
         },
         {
           "code": "8tzjrw6pgari",
-          "nombre": "Seguridad en mí mismo",
-          "desc": "Confianza para hablar, decidir y actuar.",
+          "nombre": {
+            "es": "Seguridad en mí mismo",
+            "en": "Self-confidence",
+            "fr": "Confiance en moi",
+            "zh": "自信",
+            "pt": "Segurança em mim"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Confianza para hablar, decidir y actuar.",
+            "en": "Confidence to speak, decide and act.",
+            "fr": "La confiance pour parler, décider et agir.",
+            "zh": "有信心去表达、决定与行动。",
+            "pt": "Confiança para falar, decidir e agir."
+          },
           "emoji": "🦁",
           "n": 110
         },
         {
           "code": "gpcr0qo953cu",
-          "nombre": "Soltar el perfeccionismo",
-          "desc": "Hecho es mejor que perfecto.",
+          "nombre": {
+            "es": "Soltar el perfeccionismo",
+            "en": "Letting go of perfectionism",
+            "fr": "Lâcher le perfectionnisme",
+            "zh": "放下完美主义",
+            "pt": "Soltar o perfeccionismo"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Hecho es mejor que perfecto.",
+            "en": "Done is better than perfect.",
+            "fr": "Fait vaut mieux que parfait.",
+            "zh": "完成比完美更重要。",
+            "pt": "Feito é melhor que perfeito."
+          },
           "emoji": "🎈",
           "n": 107
         }
@@ -257,40 +895,141 @@
     },
     {
       "id": "exito_dinero_y_proposito",
-      "nombre": "Éxito, dinero y propósito",
+      "nombre": {
+        "es": "Éxito, dinero y propósito",
+        "en": "Success, money and purpose",
+        "fr": "Réussite, argent et but",
+        "zh": "成功、财富与使命",
+        "pt": "Sucesso, dinheiro e propósito"
+      },
       "items": [
         {
           "code": "vs99wuvs65i7",
-          "nombre": "Abundancia y dinero",
-          "desc": "Una relación sana con la prosperidad.",
+          "nombre": {
+            "es": "Abundancia y dinero",
+            "en": "Abundance and money",
+            "fr": "Abondance et argent",
+            "zh": "丰盛与财富",
+            "pt": "Abundância e dinheiro"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Una relación sana con la prosperidad.",
+            "en": "A healthy relationship with prosperity.",
+            "fr": "Une relation saine avec la prospérité.",
+            "zh": "与富足建立健康的关系。",
+            "pt": "Uma relação saudável com a prosperidade."
+          },
           "emoji": "💰",
           "n": 98
         },
         {
           "code": "dxdz7fl3t51i",
-          "nombre": "Encontrar mi propósito",
-          "desc": "Vivir con sentido y dirección.",
+          "nombre": {
+            "es": "Encontrar mi propósito",
+            "en": "Finding my purpose",
+            "fr": "Trouver ma raison d'être",
+            "zh": "找到我的使命",
+            "pt": "Encontrar meu propósito"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Vivir con sentido y dirección.",
+            "en": "Live with meaning and direction.",
+            "fr": "Vivre avec sens et direction.",
+            "zh": "活得有意义、有方向。",
+            "pt": "Viver com sentido e direção."
+          },
           "emoji": "🧭",
           "n": 92
         },
         {
           "code": "j3hqz06ic9qb",
-          "nombre": "Éxito en el trabajo",
-          "desc": "Confianza y crecimiento profesional.",
+          "nombre": {
+            "es": "Éxito en el trabajo",
+            "en": "Success at work",
+            "fr": "Réussir au travail",
+            "zh": "职场成功",
+            "pt": "Sucesso no trabalho"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Confianza y crecimiento profesional.",
+            "en": "Confidence and professional growth.",
+            "fr": "Confiance et évolution professionnelle.",
+            "zh": "自信与职业成长。",
+            "pt": "Confiança e crescimento profissional."
+          },
           "emoji": "💼",
           "n": 97
         },
         {
           "code": "xkydjbsczr2s",
-          "nombre": "Vencer el miedo a los cambios",
-          "desc": "Adaptarme y confiar en lo nuevo.",
+          "nombre": {
+            "es": "Vencer el miedo a los cambios",
+            "en": "Overcoming fear of change",
+            "fr": "Vaincre la peur du changement",
+            "zh": "克服对改变的恐惧",
+            "pt": "Vencer o medo das mudanças"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Adaptarme y confiar en lo nuevo.",
+            "en": "Adapt and trust what's new.",
+            "fr": "M'adapter et faire confiance au nouveau.",
+            "zh": "适应变化，相信新的开始。",
+            "pt": "Adaptar-me e confiar no novo."
+          },
           "emoji": "🦋",
           "n": 94
         },
         {
           "code": "lu020qnjy727",
-          "nombre": "Vencer el miedo al fracaso",
-          "desc": "Fallar es parte de aprender.",
+          "nombre": {
+            "es": "Vencer el miedo al fracaso",
+            "en": "Overcoming fear of failure",
+            "fr": "Vaincre la peur de l'échec",
+            "zh": "克服对失败的恐惧",
+            "pt": "Vencer o medo do fracasso"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Fallar es parte de aprender.",
+            "en": "Failing is part of learning.",
+            "fr": "Échouer fait partie d'apprendre.",
+            "zh": "失败是学习的一部分。",
+            "pt": "Falhar faz parte de aprender."
+          },
           "emoji": "🧗",
           "n": 95
         }
@@ -298,26 +1037,89 @@
     },
     {
       "id": "como_me_siento",
-      "nombre": "Cómo me siento",
+      "nombre": {
+        "es": "Cómo me siento",
+        "en": "How I feel",
+        "fr": "Comment je me sens",
+        "zh": "我的感受",
+        "pt": "Como me sinto"
+      },
       "items": [
         {
           "code": "yd6gbf1jcnk5",
-          "nombre": "Ansiedad",
-          "desc": "Calma para cuando la mente va muy rápido.",
+          "nombre": {
+            "es": "Ansiedad",
+            "en": "Anxiety",
+            "fr": "Anxiété",
+            "zh": "焦虑",
+            "pt": "Ansiedade"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Calma para cuando la mente va muy rápido.",
+            "en": "Calm for when the mind races.",
+            "fr": "Du calme quand l'esprit s'emballe.",
+            "zh": "当思绪飞快时的平静。",
+            "pt": "Calma para quando a mente acelera."
+          },
           "emoji": "😮‍💨",
           "n": 142
         },
         {
           "code": "wli8sq9exadi",
-          "nombre": "Enojo e irritabilidad",
-          "desc": "Para respirar, pausar y responder con calma.",
+          "nombre": {
+            "es": "Enojo e irritabilidad",
+            "en": "Anger and irritability",
+            "fr": "Colère et irritabilité",
+            "zh": "愤怒与易怒",
+            "pt": "Raiva e irritabilidade"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Para respirar, pausar y responder con calma.",
+            "en": "To breathe, pause and respond calmly.",
+            "fr": "Respirer, faire une pause et répondre calmement.",
+            "zh": "深呼吸、暂停，平静地回应。",
+            "pt": "Para respirar, pausar e responder com calma."
+          },
           "emoji": "🔥",
           "n": 135
         },
         {
           "code": "v3ehfnkpm0kk",
-          "nombre": "Tristeza y días grises",
-          "desc": "Apoyo suave para los días difíciles.",
+          "nombre": {
+            "es": "Tristeza y días grises",
+            "en": "Sadness and gray days",
+            "fr": "Tristesse et jours gris",
+            "zh": "悲伤与灰暗的日子",
+            "pt": "Tristeza e dias cinzentos"
+          },
+          "idiomas": [
+            "es",
+            "en",
+            "fr",
+            "zh",
+            "pt"
+          ],
+          "desc": {
+            "es": "Apoyo suave para los días difíciles.",
+            "en": "Gentle support for hard days.",
+            "fr": "Un doux soutien les jours difficiles.",
+            "zh": "为艰难的日子带来温柔的支持。",
+            "pt": "Apoio suave para os dias difíceis."
+          },
           "emoji": "🌧️",
           "n": 140
         }
