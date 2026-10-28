@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AfirmaFlow</title>
+<style>
+  :root { --bg:#f4f2fb; --card:#fff; --txt:#1d1a2e; --sub:#5f5a7d; --acc:#6d4fe0; --line:#d9d4ee; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12101c; --card:#1c1930; --txt:#ece9fa; --sub:#a39fc4; --acc:#8b6cf0; --line:#332e52; } }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; background:var(--bg); color:var(--txt); font:16px/1.5 system-ui,Segoe UI,sans-serif; }
+  main { width:100%; max-width:420px; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:28px 22px; text-align:center; }
+  h1 { font-size:20px; margin:0 0 6px; }
+  .name { font-size:22px; font-weight:800; margin:14px 0 2px; }
+  .sub { color:var(--sub); font-size:14px; margin:0 0 20px; }
+  a.btn { display:block; background:var(--acc); color:#fff; text-decoration:none; font-weight:700; padding:15px; border-radius:14px; font-size:17px; }
+  a.link { display:block; color:var(--sub); font-size:13px; margin-top:16px; }
+  p.hint { color:var(--sub); font-size:13px; margin:16px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AfirmaFlow</h1>
+  <p class="name" id="name"></p>
+  <p class="sub" id="count"></p>
+  <a class="btn" id="open" href="#"></a>
+  <p class="hint" id="hint"></p>
+  <a class="link" id="install" href="#"></a>
+  <a class="link" id="file" href="#"></a>
+</main>
+<script>
+"use strict";
+const PACKAGE = "com.volt.afirmaciones";
+const PLAY = "https://play.google.com/store/apps/details?id=" + PACKAGE;
+const T = {
+  es: ["Abrir en AfirmaFlow", "Se abrirá la app y te preguntará si lo agregas.", "¿No tienes la app? Instálala", "Descargar el archivo", "tarjetas", "Enlace no válido."],
+  en: ["Open in AfirmaFlow", "The app will open and ask if you want to add it.", "Don't have the app? Install it", "Download the file", "cards", "Invalid link."],
+  fr: ["Ouvrir dans AfirmaFlow", "L'app s'ouvrira et vous demandera si vous l'ajoutez.", "Pas l'app ? Installez-la", "Télécharger le fichier", "cartes", "Lien non valide."],
+  pt: ["Abrir no AfirmaFlow", "O app vai abrir e perguntar se você quer adicionar.", "Não tem o app? Instale", "Baixar o arquivo", "cartões", "Link inválido."],
+  zh: ["在 AfirmaFlow 中打开", "应用会打开并询问是否添加。", "还没有应用？去安装", "下载文件", "张卡片", "链接无效。"],
+};
+const lang = ((navigator.language || "es").slice(0, 2).toLowerCase());
+const L = T[lang] || T.es;
+document.documentElement.lang = T[lang] ? lang : "es";
+
+const code = new URLSearchParams(location.search).get("f") || "";
+const $ = (id) => document.getElementById(id);
+if (!/^[a-z0-9]{8,40}$/.test(code)) {
+  $("name").textContent = L[5];
+  $("open").style.display = "none"; $("hint").style.display = "none"; $("file").style.display = "none";
+} else {
+  const file = new URL(code + ".json", location.href.split("?")[0]).href;
+  // intent:// abre la app directo desde Chrome; si no está instalada, lleva a Google Play.
+  $("open").href = "intent://p?u=" + encodeURIComponent(file) + "#Intent;scheme=afirmaflow;package=" + PACKAGE + ";S.browser_fallback_url=" + encodeURIComponent(PLAY) + ";end";
+  $("open").textContent = L[0];
+  $("hint").textContent = L[1];
+  $("file").href = file; $("file").textContent = L[3];
+  fetch(file, { cache: "no-store" }).then((r) => r.json()).then((j) => {
+    const d = j.decks && j.decks[0], l = j.lists && j.lists[0];
+    const name = (d && d.name) || (l && l.name) || j.nombre;
+    const n = (d && d.cards && d.cards.length) || (l && l.phrases && l.phrases.length) || (j.tarjetas && j.tarjetas.length);
+    if (name) $("name").textContent = name;
+    if (n) $("count").textContent = n + " " + L[4];
+  }).catch(() => {});
+}
+$("install").href = PLAY; $("install").textContent = L[2];
+</script>
+</body>
+</html>
