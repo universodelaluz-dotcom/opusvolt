@@ -1,0 +1,81 @@
+{
+  "v": 1,
+  "secciones": [
+    {
+      "id": "como_me_siento",
+      "nombre": "Cómo me siento",
+      "items": [
+        {
+          "code": "z36tlay6be7i",
+          "nombre": "Aceptar mi cuerpo",
+          "desc": "Mirarme y tratarme con cariño.",
+          "emoji": "🪞",
+          "n": 138
+        },
+        {
+          "code": "yd6gbf1jcnk5",
+          "nombre": "Ansiedad",
+          "desc": "Calma para cuando la mente va muy rápido.",
+          "emoji": "😮‍💨",
+          "n": 142
+        },
+        {
+          "code": "1r811f46o65e",
+          "nombre": "Concentración y enfoque",
+          "desc": "Atención clara, una cosa a la vez.",
+          "emoji": "🎯",
+          "n": 120
+        },
+        {
+          "code": "r0fbm55z2v03",
+          "nombre": "Despertar con energía",
+          "desc": "Empezar el día con ánimo.",
+          "emoji": "🌅",
+          "n": 125
+        },
+        {
+          "code": "wli8sq9exadi",
+          "nombre": "Enojo e irritabilidad",
+          "desc": "Para respirar, pausar y responder con calma.",
+          "emoji": "🔥",
+          "n": 135
+        },
+        {
+          "code": "fukvs67adm9x",
+          "nombre": "Perdonar y soltar el rencor",
+          "desc": "Liberar el corazón de lo que pesa.",
+          "emoji": "🤍",
+          "n": 123
+        },
+        {
+          "code": "43hmol131tzr",
+          "nombre": "Soledad",
+          "desc": "Acompañarme y abrirme a la conexión.",
+          "emoji": "🫂",
+          "n": 123
+        },
+        {
+          "code": "j4uywppm2u85",
+          "nombre": "Soltar la culpa",
+          "desc": "Perdonarme y seguir adelante.",
+          "emoji": "🕊️",
+          "n": 138
+        },
+        {
+          "code": "k3oxod9c1907",
+          "nombre": "Superar una ruptura",
+          "desc": "Sanar y volver a mí después de una despedida.",
+          "emoji": "💔",
+          "n": 139
+        },
+        {
+          "code": "v3ehfnkpm0kk",
+          "nombre": "Tristeza y días grises",
+          "desc": "Apoyo suave para los días difíciles.",
+          "emoji": "🌧️",
+          "n": 140
+        }
+      ]
+    }
+  ]
+}
