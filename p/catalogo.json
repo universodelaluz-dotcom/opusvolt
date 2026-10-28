@@ -2,29 +2,84 @@
   "v": 1,
   "secciones": [
     {
-      "id": "como_me_siento",
-      "nombre": "Cómo me siento",
+      "id": "espiritual_y_metafisico",
+      "nombre": "Espiritual y metafísico",
       "items": [
         {
-          "code": "z36tlay6be7i",
-          "nombre": "Aceptar mi cuerpo",
-          "desc": "Mirarme y tratarme con cariño.",
-          "emoji": "🪞",
-          "n": 138
+          "code": "zdngy2jnahts",
+          "nombre": "Conexión con el universo",
+          "desc": "Sentirme parte de algo más grande.",
+          "emoji": "🌌",
+          "n": 88
         },
         {
-          "code": "yd6gbf1jcnk5",
-          "nombre": "Ansiedad",
-          "desc": "Calma para cuando la mente va muy rápido.",
-          "emoji": "😮‍💨",
-          "n": 142
+          "code": "zwdwu3b4v0w6",
+          "nombre": "Energía y chakras",
+          "desc": "Equilibrio y vitalidad interior.",
+          "emoji": "🌈",
+          "n": 92
         },
+        {
+          "code": "9fpoibz3zvn8",
+          "nombre": "Gratitud",
+          "desc": "Ver lo bueno de cada día.",
+          "emoji": "🙏",
+          "n": 96
+        },
+        {
+          "code": "1bp6lwft2bd2",
+          "nombre": "Intuición y confianza en la vida",
+          "desc": "Escuchar mi voz interior.",
+          "emoji": "🔮",
+          "n": 83
+        },
+        {
+          "code": "e915t4pj85g3",
+          "nombre": "Ley de atracción",
+          "desc": "Pensamientos y emociones que crean mi realidad.",
+          "emoji": "🧲",
+          "n": 99
+        },
+        {
+          "code": "96h1e1sp1rbi",
+          "nombre": "Luz interior y ángeles",
+          "desc": "Mi luz y la compañía que me cuida.",
+          "emoji": "✨",
+          "n": 88
+        },
+        {
+          "code": "538zec4y02is",
+          "nombre": "Meditación y presencia",
+          "desc": "Volver al aquí y al ahora.",
+          "emoji": "🧘",
+          "n": 97
+        },
+        {
+          "code": "9bpnhb49bgfx",
+          "nombre": "Protección y limpieza energética",
+          "desc": "Cuidar mi espacio y mi energía.",
+          "emoji": "🛡️",
+          "n": 88
+        }
+      ]
+    },
+    {
+      "id": "habitos_y_rendimiento",
+      "nombre": "Hábitos y rendimiento",
+      "items": [
         {
           "code": "1r811f46o65e",
           "nombre": "Concentración y enfoque",
           "desc": "Atención clara, una cosa a la vez.",
           "emoji": "🎯",
           "n": 120
+        },
+        {
+          "code": "9pthz367898o",
+          "nombre": "Dejar de postergar",
+          "desc": "Empezar ahora, paso a paso.",
+          "emoji": "⏱️",
+          "n": 113
         },
         {
           "code": "r0fbm55z2v03",
@@ -34,11 +89,72 @@
           "n": 125
         },
         {
-          "code": "wli8sq9exadi",
-          "nombre": "Enojo e irritabilidad",
-          "desc": "Para respirar, pausar y responder con calma.",
-          "emoji": "🔥",
-          "n": 135
+          "code": "d2n0oj0k8aay",
+          "nombre": "Disciplina y constancia",
+          "desc": "Pequeños pasos cada día.",
+          "emoji": "🏋️",
+          "n": 104
+        },
+        {
+          "code": "naatefvht70x",
+          "nombre": "Dormir mejor",
+          "desc": "Soltar el día y descansar.",
+          "emoji": "🌙",
+          "n": 102
+        },
+        {
+          "code": "p9l4vbc4th7q",
+          "nombre": "Examen, entrevista o hablar en público",
+          "desc": "Calma y confianza para el gran momento.",
+          "emoji": "📝",
+          "n": 90
+        },
+        {
+          "code": "feu87g7aj6sm",
+          "nombre": "Menos celular y redes",
+          "desc": "Recuperar mi atención y mi tiempo.",
+          "emoji": "📵",
+          "n": 96
+        }
+      ]
+    },
+    {
+      "id": "amor_y_relaciones",
+      "nombre": "Amor y relaciones",
+      "items": [
+        {
+          "code": "3d6205hesuhp",
+          "nombre": "Amor en pareja",
+          "desc": "Cuidar y fortalecer el vínculo.",
+          "emoji": "💑",
+          "n": 84
+        },
+        {
+          "code": "pmj1ki5ydea8",
+          "nombre": "Atraer una relación sana",
+          "desc": "Abrirme a un amor que me valore.",
+          "emoji": "💞",
+          "n": 86
+        },
+        {
+          "code": "a0kmh3mcie95",
+          "nombre": "Paz en la familia y el hogar",
+          "desc": "Armonía y respeto en casa.",
+          "emoji": "🏡",
+          "n": 88
+        }
+      ]
+    },
+    {
+      "id": "sanar_y_soltar",
+      "nombre": "Sanar y soltar",
+      "items": [
+        {
+          "code": "8lifesd6xscm",
+          "nombre": "Pasar un duelo o una pérdida",
+          "desc": "Compañía para despedir a quien amas.",
+          "emoji": "🕯️",
+          "n": 116
         },
         {
           "code": "fukvs67adm9x",
@@ -48,11 +164,25 @@
           "n": 123
         },
         {
+          "code": "c8j1z6u6odfc",
+          "nombre": "Sanar a mi niño interior",
+          "desc": "Cuidar y abrazar a la niña o el niño que fui.",
+          "emoji": "🧸",
+          "n": 112
+        },
+        {
           "code": "43hmol131tzr",
           "nombre": "Soledad",
           "desc": "Acompañarme y abrirme a la conexión.",
           "emoji": "🫂",
           "n": 123
+        },
+        {
+          "code": "40jkg8xoa4is",
+          "nombre": "Soltar el pasado",
+          "desc": "Cerrar capítulos y vivir el presente.",
+          "emoji": "🍂",
+          "n": 106
         },
         {
           "code": "j4uywppm2u85",
@@ -67,6 +197,122 @@
           "desc": "Sanar y volver a mí después de una despedida.",
           "emoji": "💔",
           "n": 139
+        },
+        {
+          "code": "co511jfx8zsl",
+          "nombre": "Superar una traición",
+          "desc": "Recuperar la confianza en mí.",
+          "emoji": "🩹",
+          "n": 98
+        }
+      ]
+    },
+    {
+      "id": "amor_propio",
+      "nombre": "Amor propio",
+      "items": [
+        {
+          "code": "z36tlay6be7i",
+          "nombre": "Aceptar mi cuerpo",
+          "desc": "Mirarme y tratarme con cariño.",
+          "emoji": "🪞",
+          "n": 138
+        },
+        {
+          "code": "7zltrnkebnl1",
+          "nombre": "Autoestima",
+          "desc": "Recordar cuánto valgo.",
+          "emoji": "💎",
+          "n": 118
+        },
+        {
+          "code": "72uky9wca9bs",
+          "nombre": "Dejar de compararme",
+          "desc": "Mi camino es único.",
+          "emoji": "🌱",
+          "n": 100
+        },
+        {
+          "code": "gh04n18idv2g",
+          "nombre": "Poner límites y decir no",
+          "desc": "Cuidar mi tiempo y mi energía.",
+          "emoji": "🚧",
+          "n": 102
+        },
+        {
+          "code": "8tzjrw6pgari",
+          "nombre": "Seguridad en mí mismo",
+          "desc": "Confianza para hablar, decidir y actuar.",
+          "emoji": "🦁",
+          "n": 110
+        },
+        {
+          "code": "gpcr0qo953cu",
+          "nombre": "Soltar el perfeccionismo",
+          "desc": "Hecho es mejor que perfecto.",
+          "emoji": "🎈",
+          "n": 107
+        }
+      ]
+    },
+    {
+      "id": "exito_dinero_y_proposito",
+      "nombre": "Éxito, dinero y propósito",
+      "items": [
+        {
+          "code": "vs99wuvs65i7",
+          "nombre": "Abundancia y dinero",
+          "desc": "Una relación sana con la prosperidad.",
+          "emoji": "💰",
+          "n": 98
+        },
+        {
+          "code": "dxdz7fl3t51i",
+          "nombre": "Encontrar mi propósito",
+          "desc": "Vivir con sentido y dirección.",
+          "emoji": "🧭",
+          "n": 92
+        },
+        {
+          "code": "j3hqz06ic9qb",
+          "nombre": "Éxito en el trabajo",
+          "desc": "Confianza y crecimiento profesional.",
+          "emoji": "💼",
+          "n": 97
+        },
+        {
+          "code": "xkydjbsczr2s",
+          "nombre": "Vencer el miedo a los cambios",
+          "desc": "Adaptarme y confiar en lo nuevo.",
+          "emoji": "🦋",
+          "n": 94
+        },
+        {
+          "code": "lu020qnjy727",
+          "nombre": "Vencer el miedo al fracaso",
+          "desc": "Fallar es parte de aprender.",
+          "emoji": "🧗",
+          "n": 95
+        }
+      ]
+    },
+    {
+      "id": "como_me_siento",
+      "nombre": "Cómo me siento",
+      "items": [
+        {
+          "code": "yd6gbf1jcnk5",
+          "nombre": "Ansiedad",
+          "desc": "Calma para cuando la mente va muy rápido.",
+          "emoji": "😮‍💨",
+          "n": 142
+        },
+        {
+          "code": "wli8sq9exadi",
+          "nombre": "Enojo e irritabilidad",
+          "desc": "Para respirar, pausar y responder con calma.",
+          "emoji": "🔥",
+          "n": 135
         },
         {
           "code": "v3ehfnkpm0kk",
