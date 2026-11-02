@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1628" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>Eliminar cuenta y datos – AfirmaFlow</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700&display=swap" />
+  <script src="/theme.js?v=2"></script>
+  <style>
+    :root { --bg:#ffffff; --surface:#f9fafb; --line:#e5e7eb; --text:#111827; --muted:#4b5563; --purple:#0f2a4f; --green:#0f2a4f; --nav:rgba(255,255,255,.95); color-scheme:light; }
+    :root[data-theme="dark"] { --bg:#0b1628; --surface:#11223c; --line:#1f3558; --text:#f3f5f9; --muted:#a3b1c6; --purple:#9dbbe3; --green:#9dbbe3; --nav:rgba(11,22,40,.95); color-scheme:dark; }
+    h1, h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; }
+    .theme-toggle { display:grid; place-items:center; width:36px; height:36px; padding:0; border-radius:50%; border:1px solid var(--line); background:var(--surface); color:var(--text); cursor:pointer; margin-left:auto; }
+    .theme-toggle svg { width:17px; height:17px; }
+    .theme-toggle .i-sun { display:none; }
+    :root[data-theme="dark"] .theme-toggle .i-sun { display:block; }
+    :root[data-theme="dark"] .theme-toggle .i-moon { display:none; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--purple); }
+    a:hover { color: var(--green); }
+    .lang-nav { display: flex; gap: 14px; align-items: center; padding: 14px 24px; background: var(--nav); border-bottom: 1px solid var(--line); flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+    .lang-nav a { text-decoration: none; font-weight: 700; font-size: 14px; }
+    .lang-nav a:hover { text-decoration: underline; }
+    .section { max-width: 780px; margin: 0 auto; padding: 40px 24px 64px; display: none; }
+    .section.active { display: block; }
+    h1 { font-size: 30px; color: var(--text); margin: 0 0 8px; letter-spacing: -.02em; }
+    .meta { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+    h2 { font-size: 18px; color: var(--green); margin: 30px 0 10px; }
+    p, li { font-size: 15px; line-height: 1.7; color: var(--muted); }
+    strong { color: var(--text); }
+    ul { padding-left: 20px; margin: 6px 0 0; }
+    li { margin-bottom: 4px; }
+    .developer-box { background: color-mix(in srgb, var(--purple) 9%, transparent); border-left: 4px solid var(--purple); padding: 14px 18px; border-radius: 8px; margin: 20px 0; }
+    .developer-box p { font-size: 14px; margin: 4px 0; }
+      table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; color: var(--muted); }
+    th { background: var(--surface); color: var(--text); }
+    h3 { font-size: 15px; color: var(--text); margin: 20px 0 6px; }
+  </style>
+</head>
+<body>
+
+
+<div class="lang-nav" data-theme-host>
+  <strong>Idioma / Language / 语言:</strong>
+  <a href="#es" onclick="show('es')">Español</a>
+  <a href="#en" onclick="show('en')">English</a>
+  <a href="#fr" onclick="show('fr')">Français</a>
+  <a href="#pt" onclick="show('pt')">Português</a>
+  <a href="#zh" onclick="show('zh')">中文</a>
+</div>
+
+<div class="section active" id="es">
+  <h1>Eliminar tu cuenta y tus datos — AfirmaFlow</h1>
+  <div class="developer-box">
+    <p><strong>Aplicación:</strong> AfirmaFlow</p>
+    <p><strong>Desarrollador:</strong> Alain Salazar Hernandez (OpusVolt)</p>
+  </div>
+  <p>Si usaste la sincronización (iniciaste sesión con Google), puedes pedir que borremos tu cuenta y tus datos de la nube, o solo los datos.</p>
+  <h2>Cómo pedirlo</h2>
+  <ol><li>Escribe a <a href="mailto:opusvolt@gmail.com?subject=Eliminar%20cuenta%20AfirmaFlow">opusvolt@gmail.com</a> desde el correo de Google con el que iniciaste sesión.</li><li>Pon como asunto: <strong>Eliminar cuenta AfirmaFlow</strong> (o <strong>Eliminar datos AfirmaFlow</strong> si quieres conservar la cuenta).</li><li>Te confirmaremos por correo cuando esté hecho, en un plazo máximo de 30 días.</li></ol>
+  <h2>Qué se borra</h2>
+  <p>Tu correo, el identificador de tu cuenta y la copia en la nube de tus listas, frases, progreso y ajustes. No se guarda ninguna copia.</p>
+  <h2>Qué se conserva</h2>
+  <p>Nada en nuestros servidores. Los registros de compra los conserva Google Play (y RevenueCat para verificar la suscripción) según sus propias políticas.</p>
+  <h2>Datos en tu teléfono</h2>
+  <p>Lo guardado solo en el teléfono (incluidas las grabaciones de Mi voz) se borra desinstalando la app o desde Ajustes &gt; Aplicaciones &gt; AfirmaFlow &gt; Almacenamiento &gt; Borrar datos.</p>
+</div>
+
+<div class="section" id="en">
+  <h1>Delete your account and data — AfirmaFlow</h1>
+  <div class="developer-box">
+    <p><strong>App:</strong> AfirmaFlow</p>
+    <p><strong>Developer:</strong> Alain Salazar Hernandez (OpusVolt)</p>
+  </div>
+  <p>If you used sync (signed in with Google), you can ask us to delete your account and your cloud data, or only the data.</p>
+  <h2>How to request it</h2>
+  <ol><li>Email <a href="mailto:opusvolt@gmail.com?subject=Delete%20AfirmaFlow%20account">opusvolt@gmail.com</a> from the Google email you signed in with.</li><li>Use the subject: <strong>Delete AfirmaFlow account</strong> (or <strong>Delete AfirmaFlow data</strong> to keep the account).</li><li>We will confirm by email when it is done, within 30 days at most.</li></ol>
+  <h2>What is deleted</h2>
+  <p>Your email, your account identifier and the cloud copy of your lists, phrases, progress and settings. No copy is kept.</p>
+  <h2>What is kept</h2>
+  <p>Nothing on our servers. Purchase records are kept by Google Play (and RevenueCat to verify the subscription) under their own policies.</p>
+  <h2>Data on your phone</h2>
+  <p>Anything stored only on the phone (including My voice recordings) is erased by uninstalling the app or via Settings &gt; Apps &gt; AfirmaFlow &gt; Storage &gt; Clear data.</p>
+</div>
+
+<div class="section" id="fr">
+  <h1>Supprimer votre compte et vos données — AfirmaFlow</h1>
+  <div class="developer-box">
+    <p><strong>Application:</strong> AfirmaFlow</p>
+    <p><strong>Développeur:</strong> Alain Salazar Hernandez (OpusVolt)</p>
+  </div>
+  <p>Si vous avez utilisé la synchronisation (connexion avec Google), vous pouvez nous demander de supprimer votre compte et vos données dans le cloud, ou seulement les données.</p>
+  <h2>Comment faire la demande</h2>
+  <ol><li>Écrivez à <a href="mailto:opusvolt@gmail.com?subject=Supprimer%20compte%20AfirmaFlow">opusvolt@gmail.com</a> depuis l’adresse Google utilisée pour vous connecter.</li><li>Objet : <strong>Supprimer compte AfirmaFlow</strong> (ou <strong>Supprimer données AfirmaFlow</strong> pour garder le compte).</li><li>Nous vous confirmerons par e-mail une fois la suppression faite, sous 30 jours maximum.</li></ol>
+  <h2>Ce qui est supprimé</h2>
+  <p>Votre e-mail, l’identifiant de votre compte et la copie dans le cloud de vos listes, phrases, progression et réglages. Aucune copie n’est conservée.</p>
+  <h2>Ce qui est conservé</h2>
+  <p>Rien sur nos serveurs. Les historiques d’achat sont conservés par Google Play (et RevenueCat pour vérifier l’abonnement) selon leurs propres politiques.</p>
+  <h2>Données sur votre téléphone</h2>
+  <p>Ce qui est stocké uniquement sur le téléphone (y compris les enregistrements Ma voix) s’efface en désinstallant l’app ou via Paramètres &gt; Applications &gt; AfirmaFlow &gt; Stockage &gt; Effacer les données.</p>
+</div>
+
+<div class="section" id="pt">
+  <h1>Excluir sua conta e seus dados — AfirmaFlow</h1>
+  <div class="developer-box">
+    <p><strong>Aplicativo:</strong> AfirmaFlow</p>
+    <p><strong>Desenvolvedor:</strong> Alain Salazar Hernandez (OpusVolt)</p>
+  </div>
+  <p>Se você usou a sincronização (fez login com o Google), pode pedir que apaguemos sua conta e seus dados da nuvem, ou só os dados.</p>
+  <h2>Como pedir</h2>
+  <ol><li>Escreva para <a href="mailto:opusvolt@gmail.com?subject=Excluir%20conta%20AfirmaFlow">opusvolt@gmail.com</a> a partir do e-mail do Google usado no login.</li><li>Use o assunto: <strong>Excluir conta AfirmaFlow</strong> (ou <strong>Excluir dados AfirmaFlow</strong> para manter a conta).</li><li>Confirmaremos por e-mail quando estiver feito, em no máximo 30 dias.</li></ol>
+  <h2>O que é apagado</h2>
+  <p>Seu e-mail, o identificador da sua conta e a cópia na nuvem das suas listas, frases, progresso e ajustes. Nenhuma cópia é mantida.</p>
+  <h2>O que é mantido</h2>
+  <p>Nada nos nossos servidores. Os registros de compra ficam com o Google Play (e a RevenueCat, para verificar a assinatura) conforme as políticas deles.</p>
+  <h2>Dados no seu celular</h2>
+  <p>O que fica só no celular (incluindo as gravações de Minha voz) é apagado ao desinstalar o app ou em Configurações &gt; Apps &gt; AfirmaFlow &gt; Armazenamento &gt; Limpar dados.</p>
+</div>
+
+<div class="section" id="zh">
+  <h1>删除您的账户和数据 — AfirmaFlow</h1>
+  <div class="developer-box">
+    <p><strong>应用:</strong> AfirmaFlow</p>
+    <p><strong>开发者:</strong> Alain Salazar Hernandez (OpusVolt)</p>
+  </div>
+  <p>如果您使用过同步（用 Google 登录），可以要求我们删除您的账户和云端数据，或只删除数据。</p>
+  <h2>如何申请</h2>
+  <ol><li>用您登录时使用的 Google 邮箱发送邮件至 <a href="mailto:opusvolt@gmail.com?subject=Delete%20AfirmaFlow%20account">opusvolt@gmail.com</a>。</li><li>邮件主题：<strong>删除 AfirmaFlow 账户</strong>（如只删数据、保留账户：<strong>删除 AfirmaFlow 数据</strong>）。</li><li>完成后我们会通过邮件确认，最长不超过 30 天。</li></ol>
+  <h2>会删除的内容</h2>
+  <p>您的电子邮件、账户标识，以及云端保存的列表、语句、进度和设置。不保留任何副本。</p>
+  <h2>会保留的内容</h2>
+  <p>我们的服务器上不保留任何内容。购买记录由 Google Play（以及用于验证订阅的 RevenueCat）按其自身政策保存。</p>
+  <h2>手机上的数据</h2>
+  <p>仅保存在手机上的内容（包括“我的声音”录音）可通过卸载应用，或在 设置 &gt; 应用 &gt; AfirmaFlow &gt; 存储 &gt; 清除数据 中删除。</p>
+</div>
+
+<script>
+  var LANGS = ['es','en','fr','pt','zh'];
+  function show(lang) {
+    document.querySelectorAll('.section').forEach(function (s) { s.classList.toggle('active', s.id === lang); });
+  }
+  var start = location.hash ? location.hash.slice(1) : (navigator.language || 'es').slice(0, 2).toLowerCase();
+  if (LANGS.indexOf(start) >= 0) show(start);
+</script>
+</body>
+</html>
