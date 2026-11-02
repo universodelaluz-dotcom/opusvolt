@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0b1628" />
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <title>Política de Privacidad – Afirmaciones Positivas Pro</title>
+  <title>Política de Privacidad – AfirmaFlow</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700&display=swap" />
   <script src="/theme.js?v=2"></script>
   <style>
@@ -35,172 +35,425 @@
     li { margin-bottom: 4px; }
     .developer-box { background: color-mix(in srgb, var(--purple) 9%, transparent); border-left: 4px solid var(--purple); padding: 14px 18px; border-radius: 8px; margin: 20px 0; }
     .developer-box p { font-size: 14px; margin: 4px 0; }
+      table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; color: var(--muted); }
+    th { background: var(--surface); color: var(--text); }
+    h3 { font-size: 15px; color: var(--text); margin: 20px 0 6px; }
   </style>
 </head>
 <body>
 
 <div class="lang-nav" data-theme-host>
   <strong>Idioma / Language / 语言:</strong>
-  <a href="#" onclick="show('es')">Español</a>
-  <a href="#" onclick="show('en')">English</a>
-  <a href="#" onclick="show('zh')">中文</a>
+  <a href="#es" onclick="show('es')">Español</a>
+  <a href="#en" onclick="show('en')">English</a>
+  <a href="#fr" onclick="show('fr')">Français</a>
+  <a href="#pt" onclick="show('pt')">Português</a>
+  <a href="#zh" onclick="show('zh')">中文</a>
 </div>
 
-<!-- ==================== ESPAÑOL ==================== -->
 <div class="section active" id="es">
-  <h1>Política de Privacidad</h1>
-  <p class="meta">Aplicación: <strong>Afirmaciones Positivas Pro</strong> &nbsp;|&nbsp; Última actualización: Mayo 2026</p>
+<h1>Política de privacidad — AfirmaFlow</h1>
+<p class="meta">Última actualización: 2 de noviembre de 2026</p>
 
-  <div class="developer-box">
-    <p><strong>Desarrollador:</strong> Alain Salazar Hernandez</p>
-    <p><strong>Aplicación:</strong> Afirmaciones Positivas Pro</p>
-    <p><strong>Contacto:</strong> opusvolt@gmail.com</p>
-  </div>
-
-  <p>En <strong>Afirmaciones Positivas Pro</strong>, desarrollada por <strong>Alain Salazar Hernandez</strong>, nos comprometemos a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y cómo la protegemos.</p>
-
-  <h2>1. Información que recopilamos</h2>
-  <ul>
-    <li><strong>Identificador del dispositivo:</strong> para personalización de contenido y funcionamiento de anuncios.</li>
-    <li><strong>Historial de compras:</strong> para verificar y restaurar tu suscripción Pro.</li>
-    <li><strong>Configuración de notificaciones:</strong> horarios y preferencias que guardas en la app.</li>
-    <li><strong>Datos de uso anónimos:</strong> métricas de rendimiento y estabilidad de la app.</li>
-  </ul>
-
-  <h2>2. Cómo usamos la información</h2>
-  <ul>
-    <li>Proveer y mejorar las funciones de la app.</li>
-    <li>Verificar y gestionar suscripciones Pro.</li>
-    <li>Mostrar anuncios relevantes (solo en versión gratuita).</li>
-    <li>Enviar notificaciones de afirmaciones según tu configuración.</li>
-  </ul>
-
-  <h2>3. Terceros</h2>
-  <ul>
-    <li><strong>RevenueCat:</strong> gestión de suscripciones y compras in-app.</li>
-    <li><strong>Google AdMob / Huawei Ads:</strong> publicidad en la versión gratuita.</li>
-    <li><strong>Huawei IAP:</strong> compras in-app en dispositivos Huawei.</li>
-    <li><strong>Google Play Billing:</strong> compras in-app en dispositivos Android.</li>
-  </ul>
-
-  <h2>4. Almacenamiento de datos</h2>
-  <p>Tus preferencias y configuración se almacenan localmente en tu dispositivo. Los datos de suscripción se almacenan en los servidores de RevenueCat con cifrado estándar.</p>
-
-  <h2>5. Tus derechos</h2>
-  <p>Puedes solicitar acceso, corrección o eliminación de tus datos contactándonos en <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a>.</p>
-
-  <h2>6. Cambios a esta política</h2>
-  <p>Podemos actualizar esta política. Los cambios se notificarán dentro de la app.</p>
-
-  <h2>7. Contacto</h2>
-  <p>Alain Salazar Hernandez &nbsp;|&nbsp; <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+<div class="developer-box">
+  <p><strong>Desarrollador:</strong> Alain Salazar Hernandez</p>
+  <p><strong>Aplicación:</strong> AfirmaFlow (antes Afirmaciones Positivas Pro)</p>
+  <p><strong>Contacto:</strong> opusvolt@gmail.com</p>
 </div>
 
-<!-- ==================== ENGLISH ==================== -->
+<p>Esta política explica qué datos maneja la aplicación <strong>AfirmaFlow</strong> ("la App"), publicada por <strong>Alain Salazar Hernandez (OpusVolt)</strong> ("nosotros"). Al instalar y usar la App, aceptas las prácticas descritas a continuación.</p>
+
+<h2>1. Datos que se quedan en tu dispositivo</h2>
+<p>La App funciona principalmente sin conexión. Si no inicias sesión, todo lo siguiente se guarda <strong>solo en tu dispositivo</strong>:</p>
+<ul>
+  <li>Tu nombre (si decides escribirlo) y el género con el que prefieres las frases.</li>
+  <li>Tus afirmaciones y listas propias, y las frases que editaste o quitaste.</li>
+  <li>Tu progreso: sesiones, racha, metas, frascos de hábitos y desafíos.</li>
+  <li>Tus preferencias: tema, letra, fondos, idioma, voz, sonidos y recordatorios.</li>
+  <li>El PIN de tus listas, guardado solo como huella cifrada (nunca el número).</li>
+</ul>
+<p>Puedes borrar todo desinstalando la App o desde Ajustes &gt; Aplicaciones &gt; AfirmaFlow &gt; Almacenamiento.</p>
+
+<h2>2. Cámara y micrófono</h2>
+<ul>
+  <li><strong>Cámara (modo espejo):</strong> la cámara frontal solo se muestra en pantalla detrás de las frases mientras usas el modo espejo. <strong>No se graba ni se guarda ninguna imagen</strong>, y nada se envía fuera del dispositivo.</li>
+  <li><strong>Micrófono (Mi voz):</strong> si decides grabar tus afirmaciones con tu voz, las grabaciones se guardan <strong>solo en tu dispositivo</strong>. No se suben a la nube ni las recibimos nosotros. Solo salen del teléfono si tú las exportas a un archivo.</li>
+</ul>
+<p>Ambos permisos se piden únicamente cuando usas esas funciones, y puedes negarlos o quitarlos cuando quieras desde los ajustes de Android; el resto de la App sigue funcionando.</p>
+
+<h2>3. Sincronización en la nube (opcional)</h2>
+<p>Si inicias sesión con Google para guardar una copia de seguridad o usar la App en varios dispositivos, guardamos en nuestro servicio de base de datos (Supabase):</p>
+<ul>
+  <li>Tu correo y el identificador de tu cuenta de Google (para reconocerte).</li>
+  <li>Una copia de los datos de la sección 1 (salvo el PIN y las grabaciones de voz).</li>
+</ul>
+<p>Esta copia solo se usa para restaurar tus datos. Puedes cerrar sesión cuando quieras, y pedirnos que la borremos escribiendo al correo de contacto.</p>
+<p>Política de Supabase:&nbsp;<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
+
+<h2>4. Servicios de terceros</h2>
+<h3>4.1 Google AdMob (publicidad)</h3>
+<p>En la versión gratuita la App muestra anuncios de Google AdMob, que puede recopilar el identificador de publicidad (AD_ID), la dirección IP aproximada, datos del dispositivo (modelo, sistema, idioma) y la interacción con los anuncios. En la Unión Europea, Reino Unido y Suiza pedimos tu consentimiento antes de mostrar anuncios personalizados (formulario UMP de Google). Con Pro no se muestran anuncios.</p>
+<p>Política de Google:&nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+<h3>4.2 RevenueCat y Google Play (compras)</h3>
+<p>Las compras las procesa Google Play; nosotros no vemos tu información de pago. Para verificar tu suscripción Pro, RevenueCat recibe un identificador anónimo, el producto comprado, su estado y el recibo de Google Play.</p>
+<p>Política de RevenueCat:&nbsp;<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+<h3>4.3 Voz del teléfono</h3>
+<p>Para leer las frases en voz alta, la App usa el motor de voz instalado en tu teléfono (por ejemplo, el de Google). Ese motor lo gestiona Android y su fabricante.</p>
+<h3>4.4 Contenido adicional</h3>
+<p>Si agregas listas desde «Tener más…» o desde un enlace, la App las descarga de nuestro sitio en GitHub Pages, que, como cualquier servidor web, ve la dirección IP de la solicitud.</p>
+
+<h2>5. Permisos que solicita la App</h2>
+<table>
+  <thead><tr><th>Permiso</th><th>Para qué</th></tr></thead>
+  <tbody>
+    <tr><td>INTERNET</td><td>Anuncios, compras, sincronización opcional y descarga de listas.</td></tr>
+    <tr><td>CAMERA</td><td>Modo espejo: ver la cámara frontal detrás de las frases. No se graba.</td></tr>
+    <tr><td>RECORD_AUDIO / MODIFY_AUDIO_SETTINGS</td><td>Mi voz: grabar tus afirmaciones. El audio queda en el teléfono.</td></tr>
+    <tr><td>POST_NOTIFICATIONS / RECEIVE_BOOT_COMPLETED / WAKE_LOCK</td><td>Recordatorios (solo si los activas) y restaurarlos tras reiniciar.</td></tr>
+    <tr><td>FOREGROUND_SERVICE / MEDIA_PLAYBACK</td><td>Seguir con la música o la voz con la pantalla apagada.</td></tr>
+    <tr><td>SET_WALLPAPER</td><td>Poner como fondo de pantalla las imágenes que elijas.</td></tr>
+    <tr><td>VIBRATE</td><td>Vibración suave al tocar las frases.</td></tr>
+    <tr><td>AD_ID</td><td>Mostrar anuncios (solo versión gratuita).</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Niños</h2>
+<p>La App no está dirigida a menores de 13 años y no recopilamos a sabiendas datos de menores. Si crees que un menor nos ha dado información, escríbenos y la eliminaremos.</p>
+
+<h2>7. Tus derechos (RGPD / CCPA)</h2>
+<p>Puedes acceder, corregir o borrar tus datos. Los datos locales se borran desinstalando la App o borrando sus datos; para borrar la copia en la nube, escríbenos. Para datos en Google o RevenueCat, consulta sus políticas o contáctanos.</p>
+
+<h2>8. Cambios</h2>
+<p>Podemos actualizar esta política. Publicaremos la nueva versión en esta misma dirección con la fecha de actualización.</p>
+
+<h2>9. Contacto</h2>
+<p><a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+</div>
+
 <div class="section" id="en">
-  <h1>Privacy Policy</h1>
-  <p class="meta">App: <strong>Afirmaciones Positivas Pro</strong> &nbsp;|&nbsp; Last updated: May 2026</p>
+<h1>Privacy Policy — AfirmaFlow</h1>
+<p class="meta">Last updated: November 2, 2026</p>
 
-  <div class="developer-box">
-    <p><strong>Developer:</strong> Alain Salazar Hernandez</p>
-    <p><strong>App:</strong> Afirmaciones Positivas Pro</p>
-    <p><strong>Contact:</strong> opusvolt@gmail.com</p>
-  </div>
-
-  <p><strong>Afirmaciones Positivas Pro</strong>, developed by <strong>Alain Salazar Hernandez</strong>, is committed to protecting your privacy. This policy explains what information we collect, how we use it, and how we protect it.</p>
-
-  <h2>1. Information We Collect</h2>
-  <ul>
-    <li><strong>Device identifier:</strong> for content personalization and ad delivery.</li>
-    <li><strong>Purchase history:</strong> to verify and restore your Pro subscription.</li>
-    <li><strong>Notification settings:</strong> schedules and preferences you save in the app.</li>
-    <li><strong>Anonymous usage data:</strong> performance and stability metrics.</li>
-  </ul>
-
-  <h2>2. How We Use Information</h2>
-  <ul>
-    <li>Provide and improve app features.</li>
-    <li>Verify and manage Pro subscriptions.</li>
-    <li>Show relevant ads (free version only).</li>
-    <li>Send affirmation notifications based on your settings.</li>
-  </ul>
-
-  <h2>3. Third Parties</h2>
-  <ul>
-    <li><strong>RevenueCat:</strong> subscription and in-app purchase management.</li>
-    <li><strong>Google AdMob / Huawei Ads:</strong> advertising in the free version.</li>
-    <li><strong>Huawei IAP:</strong> in-app purchases on Huawei devices.</li>
-    <li><strong>Google Play Billing:</strong> in-app purchases on Android devices.</li>
-  </ul>
-
-  <h2>4. Data Storage</h2>
-  <p>Your preferences are stored locally on your device. Subscription data is stored on RevenueCat servers with standard encryption.</p>
-
-  <h2>5. Your Rights</h2>
-  <p>You may request access, correction, or deletion of your data by contacting us at <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a>.</p>
-
-  <h2>6. Changes</h2>
-  <p>We may update this policy. Changes will be notified within the app.</p>
-
-  <h2>7. Contact</h2>
-  <p>Alain Salazar Hernandez &nbsp;|&nbsp; <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+<div class="developer-box">
+  <p><strong>Developer:</strong> Alain Salazar Hernandez</p>
+  <p><strong>App:</strong> AfirmaFlow (formerly Afirmaciones Positivas Pro)</p>
+  <p><strong>Contact:</strong> opusvolt@gmail.com</p>
 </div>
 
-<!-- ==================== 中文 ==================== -->
+<p>This policy explains what data the <strong>AfirmaFlow</strong> app ("the App"), published by <strong>Alain Salazar Hernandez (OpusVolt)</strong> ("we"), handles. By installing and using the App you agree to the practices described below.</p>
+
+<h2>1. Data that stays on your device</h2>
+<p>The App works mostly offline. If you don't sign in, all of the following is stored <strong>only on your device</strong>:</p>
+<ul>
+  <li>Your name (if you choose to enter it) and the grammatical gender you prefer for phrases.</li>
+  <li>Your own affirmations and lists, and phrases you edited or removed.</li>
+  <li>Your progress: sessions, streak, goals, habit jars and challenges.</li>
+  <li>Your preferences: theme, font, backgrounds, language, voice, sounds and reminders.</li>
+  <li>The PIN for your lists, stored only as an encrypted hash (never the number itself).</li>
+</ul>
+<p>You can erase everything by uninstalling the App or from Settings &gt; Apps &gt; AfirmaFlow &gt; Storage.</p>
+
+<h2>2. Camera and microphone</h2>
+<ul>
+  <li><strong>Camera (mirror mode):</strong> the front camera is only shown on screen behind the phrases while you use mirror mode. <strong>No image is recorded or saved</strong>, and nothing leaves your device.</li>
+  <li><strong>Microphone (My voice):</strong> if you choose to record your affirmations in your own voice, the recordings are stored <strong>only on your device</strong>. They are not uploaded to the cloud and we never receive them. They only leave your phone if you export them to a file.</li>
+</ul>
+<p>Both permissions are requested only when you use those features, and you can deny or revoke them at any time in Android settings; the rest of the App keeps working.</p>
+
+<h2>3. Cloud sync (optional)</h2>
+<p>If you sign in with Google to back up your data or use the App on several devices, we store in our database service (Supabase):</p>
+<ul>
+  <li>Your email and Google account identifier (to recognize you).</li>
+  <li>A copy of the data in section 1 (except the PIN and voice recordings).</li>
+</ul>
+<p>This copy is used only to restore your data. You can sign out at any time and ask us to delete it by writing to the contact email.</p>
+<p>Supabase policy:&nbsp;<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
+
+<h2>4. Third-party services</h2>
+<h3>4.1 Google AdMob (advertising)</h3>
+<p>In the free version the App shows ads from Google AdMob, which may collect the advertising ID (AD_ID), approximate IP address, device data (model, OS, language) and ad interactions. In the EU, UK and Switzerland we ask for your consent before showing personalized ads (Google UMP form). Pro shows no ads.</p>
+<p>Google policy:&nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+<h3>4.2 RevenueCat and Google Play (purchases)</h3>
+<p>Purchases are processed by Google Play; we never see your payment information. To verify your Pro subscription, RevenueCat receives an anonymous identifier, the purchased product, its status and the Google Play receipt.</p>
+<p>RevenueCat policy:&nbsp;<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+<h3>4.3 Phone voice</h3>
+<p>To read phrases aloud, the App uses the text-to-speech engine installed on your phone (for example Google's). That engine is managed by Android and its maker.</p>
+<h3>4.4 Additional content</h3>
+<p>If you add lists from "Get more…" or from a link, the App downloads them from our site on GitHub Pages, which, like any web server, sees the IP address of the request.</p>
+
+<h2>5. Permissions the App requests</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>INTERNET</td><td>Ads, purchases, optional sync and downloading lists.</td></tr>
+    <tr><td>CAMERA</td><td>Mirror mode: show the front camera behind the phrases. Nothing is recorded.</td></tr>
+    <tr><td>RECORD_AUDIO / MODIFY_AUDIO_SETTINGS</td><td>My voice: record your affirmations. Audio stays on the phone.</td></tr>
+    <tr><td>POST_NOTIFICATIONS / RECEIVE_BOOT_COMPLETED / WAKE_LOCK</td><td>Reminders (only if you enable them) and restoring them after a reboot.</td></tr>
+    <tr><td>FOREGROUND_SERVICE / MEDIA_PLAYBACK</td><td>Keep music or voice playing with the screen off.</td></tr>
+    <tr><td>SET_WALLPAPER</td><td>Set images you choose as your wallpaper.</td></tr>
+    <tr><td>VIBRATE</td><td>Gentle vibration when you tap phrases.</td></tr>
+    <tr><td>AD_ID</td><td>Show ads (free version only).</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Children</h2>
+<p>The App is not directed at children under 13 and we do not knowingly collect data from minors. If you believe a minor has given us information, contact us and we will delete it.</p>
+
+<h2>7. Your rights (GDPR / CCPA)</h2>
+<p>You can access, correct or delete your data. Local data is erased by uninstalling the App or clearing its data; to delete the cloud copy, write to us. For data held by Google or RevenueCat, see their policies or contact us.</p>
+
+<h2>8. Changes</h2>
+<p>We may update this policy. The new version will be posted at this same address with an updated date.</p>
+
+<h2>9. Contact</h2>
+<p><a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+</div>
+
+<div class="section" id="fr">
+<h1>Politique de confidentialité — AfirmaFlow</h1>
+<p class="meta">Dernière mise à jour : 2 novembre 2026</p>
+
+<div class="developer-box">
+  <p><strong>Développeur:</strong> Alain Salazar Hernandez</p>
+  <p><strong>Application:</strong> AfirmaFlow (anciennement Afirmaciones Positivas Pro)</p>
+  <p><strong>Contact:</strong> opusvolt@gmail.com</p>
+</div>
+
+<p>Cette politique explique quelles données traite l'application <strong>AfirmaFlow</strong> (« l'App »), publiée par <strong>Alain Salazar Hernandez (OpusVolt)</strong> (« nous »). En installant et en utilisant l'App, vous acceptez les pratiques décrites ci-dessous.</p>
+
+<h2>1. Données qui restent sur votre appareil</h2>
+<p>L'App fonctionne surtout hors ligne. Si vous ne vous connectez pas, tout ce qui suit est stocké <strong>uniquement sur votre appareil</strong> :</p>
+<ul>
+  <li>Votre prénom (si vous le saisissez) et le genre grammatical choisi pour les phrases.</li>
+  <li>Vos affirmations et listes personnelles, et les phrases modifiées ou retirées.</li>
+  <li>Votre progression : sessions, série, objectifs, bocaux d'habitudes et défis.</li>
+  <li>Vos préférences : thème, police, fonds, langue, voix, sons et rappels.</li>
+  <li>Le code PIN de vos listes, stocké uniquement sous forme d'empreinte chiffrée (jamais le code lui-même).</li>
+</ul>
+<p>Vous pouvez tout effacer en désinstallant l'App ou via Paramètres &gt; Applications &gt; AfirmaFlow &gt; Stockage.</p>
+
+<h2>2. Caméra et micro</h2>
+<ul>
+  <li><strong>Caméra (mode miroir) :</strong> la caméra frontale s'affiche seulement à l'écran derrière les phrases pendant le mode miroir. <strong>Aucune image n'est enregistrée ni sauvegardée</strong>, et rien ne quitte votre appareil.</li>
+  <li><strong>Micro (Ma voix) :</strong> si vous enregistrez vos affirmations avec votre voix, les enregistrements restent <strong>uniquement sur votre appareil</strong>. Ils ne sont pas envoyés dans le cloud et nous ne les recevons jamais. Ils ne quittent votre téléphone que si vous les exportez dans un fichier.</li>
+</ul>
+<p>Ces deux autorisations ne sont demandées que lorsque vous utilisez ces fonctions, et vous pouvez les refuser ou les retirer à tout moment dans les paramètres Android ; le reste de l'App continue de fonctionner.</p>
+
+<h2>3. Synchronisation dans le cloud (facultative)</h2>
+<p>Si vous vous connectez avec Google pour sauvegarder vos données ou utiliser l'App sur plusieurs appareils, nous stockons dans notre service de base de données (Supabase) :</p>
+<ul>
+  <li>Votre e-mail et l'identifiant de votre compte Google (pour vous reconnaître).</li>
+  <li>Une copie des données de la section 1 (sauf le PIN et les enregistrements vocaux).</li>
+</ul>
+<p>Cette copie sert uniquement à restaurer vos données. Vous pouvez vous déconnecter à tout moment et nous demander de la supprimer en écrivant à l'adresse de contact.</p>
+<p>Politique de Supabase :&nbsp;<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
+
+<h2>4. Services tiers</h2>
+<h3>4.1 Google AdMob (publicité)</h3>
+<p>Dans la version gratuite, l'App affiche des publicités Google AdMob, qui peut collecter l'identifiant publicitaire (AD_ID), l'adresse IP approximative, des données d'appareil (modèle, système, langue) et les interactions avec les annonces. Dans l'UE, au Royaume-Uni et en Suisse, nous demandons votre consentement avant d'afficher des publicités personnalisées (formulaire UMP de Google). La version Pro n'affiche aucune publicité.</p>
+<p>Politique de Google :&nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+<h3>4.2 RevenueCat et Google Play (achats)</h3>
+<p>Les achats sont traités par Google Play ; nous ne voyons jamais vos données de paiement. Pour vérifier votre abonnement Pro, RevenueCat reçoit un identifiant anonyme, le produit acheté, son statut et le reçu Google Play.</p>
+<p>Politique de RevenueCat :&nbsp;<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+<h3>4.3 Voix du téléphone</h3>
+<p>Pour lire les phrases à voix haute, l'App utilise le moteur de synthèse vocale installé sur votre téléphone (par exemple celui de Google). Ce moteur est géré par Android et son fabricant.</p>
+<h3>4.4 Contenu supplémentaire</h3>
+<p>Si vous ajoutez des listes depuis « En avoir plus… » ou depuis un lien, l'App les télécharge depuis notre site sur GitHub Pages, qui, comme tout serveur web, voit l'adresse IP de la requête.</p>
+
+<h2>5. Autorisations demandées</h2>
+<table>
+  <thead><tr><th>Autorisation</th><th>Utilité</th></tr></thead>
+  <tbody>
+    <tr><td>INTERNET</td><td>Publicités, achats, synchronisation facultative et téléchargement de listes.</td></tr>
+    <tr><td>CAMERA</td><td>Mode miroir : afficher la caméra frontale derrière les phrases. Rien n'est enregistré.</td></tr>
+    <tr><td>RECORD_AUDIO / MODIFY_AUDIO_SETTINGS</td><td>Ma voix : enregistrer vos affirmations. L'audio reste sur le téléphone.</td></tr>
+    <tr><td>POST_NOTIFICATIONS / RECEIVE_BOOT_COMPLETED / WAKE_LOCK</td><td>Rappels (seulement si vous les activez) et leur rétablissement après un redémarrage.</td></tr>
+    <tr><td>FOREGROUND_SERVICE / MEDIA_PLAYBACK</td><td>Continuer la musique ou la voix écran éteint.</td></tr>
+    <tr><td>SET_WALLPAPER</td><td>Définir les images choisies comme fond d'écran.</td></tr>
+    <tr><td>VIBRATE</td><td>Légère vibration au toucher des phrases.</td></tr>
+    <tr><td>AD_ID</td><td>Afficher des publicités (version gratuite uniquement).</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Enfants</h2>
+<p>L'App ne s'adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données de mineurs. Si vous pensez qu'un mineur nous a transmis des informations, contactez-nous et nous les supprimerons.</p>
+
+<h2>7. Vos droits (RGPD / CCPA)</h2>
+<p>Vous pouvez accéder à vos données, les corriger ou les supprimer. Les données locales s'effacent en désinstallant l'App ou en effaçant ses données ; pour supprimer la copie dans le cloud, écrivez-nous. Pour les données détenues par Google ou RevenueCat, consultez leurs politiques ou contactez-nous.</p>
+
+<h2>8. Modifications</h2>
+<p>Nous pouvons mettre à jour cette politique. La nouvelle version sera publiée à cette même adresse avec la date de mise à jour.</p>
+
+<h2>9. Contact</h2>
+<p><a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+</div>
+
+<div class="section" id="pt">
+<h1>Política de privacidade — AfirmaFlow</h1>
+<p class="meta">Última atualização: 2 de novembro de 2026</p>
+
+<div class="developer-box">
+  <p><strong>Desenvolvedor:</strong> Alain Salazar Hernandez</p>
+  <p><strong>Aplicativo:</strong> AfirmaFlow (antes Afirmaciones Positivas Pro)</p>
+  <p><strong>Contato:</strong> opusvolt@gmail.com</p>
+</div>
+
+<p>Esta política explica quais dados o aplicativo <strong>AfirmaFlow</strong> ("o App"), publicado pela <strong>Alain Salazar Hernandez (OpusVolt)</strong> ("nós"), trata. Ao instalar e usar o App, você concorda com as práticas descritas abaixo.</p>
+
+<h2>1. Dados que ficam no seu dispositivo</h2>
+<p>O App funciona principalmente sem conexão. Se você não fizer login, tudo o que segue fica salvo <strong>apenas no seu dispositivo</strong>:</p>
+<ul>
+  <li>Seu nome (se você escolher digitá-lo) e o gênero que prefere para as frases.</li>
+  <li>Suas afirmações e listas próprias, e as frases que você editou ou removeu.</li>
+  <li>Seu progresso: sessões, sequência, metas, potes de hábitos e desafios.</li>
+  <li>Suas preferências: tema, fonte, fundos, idioma, voz, sons e lembretes.</li>
+  <li>O PIN das suas listas, salvo apenas como uma impressão criptografada (nunca o número).</li>
+</ul>
+<p>Você pode apagar tudo desinstalando o App ou em Configurações &gt; Apps &gt; AfirmaFlow &gt; Armazenamento.</p>
+
+<h2>2. Câmera e microfone</h2>
+<ul>
+  <li><strong>Câmera (modo espelho):</strong> a câmera frontal aparece apenas na tela, atrás das frases, enquanto você usa o modo espelho. <strong>Nenhuma imagem é gravada ou salva</strong>, e nada sai do seu dispositivo.</li>
+  <li><strong>Microfone (Minha voz):</strong> se você decidir gravar suas afirmações com sua voz, as gravações ficam <strong>apenas no seu dispositivo</strong>. Elas não são enviadas para a nuvem e nós nunca as recebemos. Só saem do celular se você exportá-las para um arquivo.</li>
+</ul>
+<p>As duas permissões só são pedidas quando você usa essas funções, e você pode negá-las ou retirá-las a qualquer momento nas configurações do Android; o resto do App continua funcionando.</p>
+
+<h2>3. Sincronização na nuvem (opcional)</h2>
+<p>Se você fizer login com o Google para guardar um backup ou usar o App em vários dispositivos, salvamos no nosso serviço de banco de dados (Supabase):</p>
+<ul>
+  <li>Seu e-mail e o identificador da sua conta Google (para reconhecer você).</li>
+  <li>Uma cópia dos dados da seção 1 (exceto o PIN e as gravações de voz).</li>
+</ul>
+<p>Essa cópia é usada apenas para restaurar seus dados. Você pode sair da conta quando quiser e pedir que a apaguemos escrevendo para o e-mail de contato.</p>
+<p>Política da Supabase:&nbsp;<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
+
+<h2>4. Serviços de terceiros</h2>
+<h3>4.1 Google AdMob (publicidade)</h3>
+<p>Na versão gratuita o App mostra anúncios do Google AdMob, que pode coletar o identificador de publicidade (AD_ID), o endereço IP aproximado, dados do dispositivo (modelo, sistema, idioma) e a interação com os anúncios. Na União Europeia, Reino Unido e Suíça pedimos seu consentimento antes de mostrar anúncios personalizados (formulário UMP do Google). Com o Pro não há anúncios.</p>
+<p>Política do Google:&nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+<h3>4.2 RevenueCat e Google Play (compras)</h3>
+<p>As compras são processadas pelo Google Play; nós nunca vemos suas informações de pagamento. Para verificar sua assinatura Pro, a RevenueCat recebe um identificador anônimo, o produto comprado, seu status e o recibo do Google Play.</p>
+<p>Política da RevenueCat:&nbsp;<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+<h3>4.3 Voz do celular</h3>
+<p>Para ler as frases em voz alta, o App usa o mecanismo de voz instalado no seu celular (por exemplo, o do Google). Esse mecanismo é gerenciado pelo Android e pelo fabricante.</p>
+<h3>4.4 Conteúdo adicional</h3>
+<p>Se você adicionar listas em «Ter mais…» ou por um link, o App as baixa do nosso site no GitHub Pages, que, como qualquer servidor web, vê o endereço IP da solicitação.</p>
+
+<h2>5. Permissões que o App solicita</h2>
+<table>
+  <thead><tr><th>Permissão</th><th>Para quê</th></tr></thead>
+  <tbody>
+    <tr><td>INTERNET</td><td>Anúncios, compras, sincronização opcional e download de listas.</td></tr>
+    <tr><td>CAMERA</td><td>Modo espelho: mostrar a câmera frontal atrás das frases. Nada é gravado.</td></tr>
+    <tr><td>RECORD_AUDIO / MODIFY_AUDIO_SETTINGS</td><td>Minha voz: gravar suas afirmações. O áudio fica no celular.</td></tr>
+    <tr><td>POST_NOTIFICATIONS / RECEIVE_BOOT_COMPLETED / WAKE_LOCK</td><td>Lembretes (só se você ativá-los) e restaurá-los após reiniciar.</td></tr>
+    <tr><td>FOREGROUND_SERVICE / MEDIA_PLAYBACK</td><td>Continuar a música ou a voz com a tela desligada.</td></tr>
+    <tr><td>SET_WALLPAPER</td><td>Colocar como papel de parede as imagens que você escolher.</td></tr>
+    <tr><td>VIBRATE</td><td>Vibração suave ao tocar nas frases.</td></tr>
+    <tr><td>AD_ID</td><td>Mostrar anúncios (apenas versão gratuita).</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Crianças</h2>
+<p>O App não é destinado a menores de 13 anos e não coletamos intencionalmente dados de menores. Se você acredita que um menor nos forneceu informações, fale conosco e as apagaremos.</p>
+
+<h2>7. Seus direitos (LGPD / RGPD / CCPA)</h2>
+<p>Você pode acessar, corrigir ou apagar seus dados. Os dados locais são apagados ao desinstalar o App ou limpar seus dados; para apagar a cópia na nuvem, escreva para nós. Para dados do Google ou da RevenueCat, consulte as políticas deles ou fale conosco.</p>
+
+<h2>8. Alterações</h2>
+<p>Podemos atualizar esta política. A nova versão será publicada neste mesmo endereço com a data de atualização.</p>
+
+<h2>9. Contato</h2>
+<p><a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+</div>
+
 <div class="section" id="zh">
-  <h1>隐私政策</h1>
-  <p class="meta">应用名称：<strong>Afirmaciones Positivas Pro</strong> &nbsp;|&nbsp; 最后更新：2026年5月</p>
+<h1>隐私政策 — AfirmaFlow</h1>
+<p class="meta">最后更新：2026年11月2日</p>
 
-  <div class="developer-box">
-    <p><strong>开发者：</strong>Alain Salazar Hernandez</p>
-    <p><strong>应用名称：</strong>Afirmaciones Positivas Pro</p>
-    <p><strong>联系方式：</strong>opusvolt@gmail.com</p>
-  </div>
+<div class="developer-box">
+  <p><strong>开发者:</strong> Alain Salazar Hernandez</p>
+  <p><strong>应用:</strong> AfirmaFlow（原名 Afirmaciones Positivas Pro）</p>
+  <p><strong>联系方式:</strong> opusvolt@gmail.com</p>
+</div>
 
-  <p><strong>Afirmaciones Positivas Pro</strong> 由 <strong>Alain Salazar Hernandez</strong> 开发，我们致力于保护您的隐私。本政策说明我们收集哪些信息、如何使用以及如何保护这些信息。</p>
+<p>本政策说明由 <strong>Alain Salazar Hernandez (OpusVolt)</strong>（“我们”）发布的 <strong>AfirmaFlow</strong> 应用（“本应用”）如何处理数据。安装并使用本应用即表示您同意以下做法。</p>
 
-  <h2>1. 我们收集的信息</h2>
-  <ul>
-    <li><strong>设备标识符：</strong>用于内容个性化和广告投放。</li>
-    <li><strong>购买记录：</strong>用于验证和恢复您的 Pro 订阅。</li>
-    <li><strong>通知设置：</strong>您在应用中保存的时间表和偏好设置。</li>
-    <li><strong>匿名使用数据：</strong>性能和稳定性指标。</li>
-  </ul>
+<h2>1. 保存在您设备上的数据</h2>
+<p>本应用主要离线运行。如果您不登录，以下内容<strong>仅保存在您的设备上</strong>：</p>
+<ul>
+  <li>您的名字（如果您选择填写）以及您偏好的语句性别形式。</li>
+  <li>您自己的肯定语和列表，以及您编辑或删除的语句。</li>
+  <li>您的进度：练习次数、连续天数、目标、习惯罐和挑战。</li>
+  <li>您的偏好：主题、字体、背景、语言、语音、声音和提醒。</li>
+  <li>列表的 PIN 码，仅以加密摘要形式保存（从不保存数字本身）。</li>
+</ul>
+<p>您可以卸载本应用，或在 设置 &gt; 应用 &gt; AfirmaFlow &gt; 存储 中清除全部数据。</p>
 
-  <h2>2. 信息使用方式</h2>
-  <ul>
-    <li>提供并改进应用功能。</li>
-    <li>验证和管理 Pro 订阅。</li>
-    <li>展示相关广告（仅限免费版本）。</li>
-    <li>根据您的设置发送肯定句通知。</li>
-  </ul>
+<h2>2. 摄像头和麦克风</h2>
+<ul>
+  <li><strong>摄像头（镜子模式）：</strong>使用镜子模式时，前置摄像头的画面仅显示在语句后方。<strong>不会录制或保存任何图像</strong>，也不会有任何内容离开您的设备。</li>
+  <li><strong>麦克风（我的声音）：</strong>如果您选择用自己的声音录制肯定语，录音<strong>仅保存在您的设备上</strong>，不会上传到云端，我们也不会收到。只有在您将其导出为文件时，录音才会离开手机。</li>
+</ul>
+<p>这两项权限仅在您使用相应功能时才会请求，您可以随时在 Android 设置中拒绝或撤销；应用的其他部分仍可正常使用。</p>
 
-  <h2>3. 第三方服务</h2>
-  <ul>
-    <li><strong>RevenueCat：</strong>订阅和应用内购买管理。</li>
-    <li><strong>Google AdMob / 华为广告：</strong>免费版本中的广告服务。</li>
-    <li><strong>华为 IAP：</strong>华为设备上的应用内购买。</li>
-    <li><strong>Google Play 结算：</strong>Android 设备上的应用内购买。</li>
-  </ul>
+<h2>3. 云同步（可选）</h2>
+<p>如果您使用 Google 登录以备份数据或在多台设备上使用本应用，我们会在数据库服务（Supabase）中保存：</p>
+<ul>
+  <li>您的电子邮件和 Google 账户标识（用于识别您）。</li>
+  <li>第 1 节中数据的副本（PIN 码和录音除外）。</li>
+</ul>
+<p>此副本仅用于恢复您的数据。您可以随时退出登录，并发送邮件至联系邮箱要求我们删除。</p>
+<p>Supabase 隐私政策：&nbsp;<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></p>
 
-  <h2>4. 数据存储</h2>
-  <p>您的偏好设置存储在您的设备本地。订阅数据以标准加密方式存储在 RevenueCat 服务器上。</p>
+<h2>4. 第三方服务</h2>
+<h3>4.1 Google AdMob（广告）</h3>
+<p>免费版会显示 Google AdMob 广告，AdMob 可能收集广告标识（AD_ID）、大致 IP 地址、设备数据（型号、系统、语言）以及广告互动。在欧盟、英国和瑞士，我们会在显示个性化广告前征求您的同意（Google UMP 表单）。Pro 版不显示广告。</p>
+<p>Google 隐私政策：&nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+<h3>4.2 RevenueCat 和 Google Play（购买）</h3>
+<p>购买由 Google Play 处理，我们看不到您的付款信息。为验证 Pro 订阅，RevenueCat 会收到匿名标识、所购产品、其状态以及 Google Play 收据。</p>
+<p>RevenueCat 隐私政策：&nbsp;<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+<h3>4.3 手机语音</h3>
+<p>朗读语句时，本应用使用您手机上安装的语音引擎（例如 Google 的）。该引擎由 Android 及其制造商管理。</p>
+<h3>4.4 附加内容</h3>
+<p>如果您通过“获取更多…”或链接添加列表，本应用会从我们在 GitHub Pages 上的网站下载，与任何网站服务器一样，它会看到请求的 IP 地址。</p>
 
-  <h2>5. 您的权利</h2>
-  <p>您可以通过联系 <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a> 请求访问、更正或删除您的数据。</p>
+<h2>5. 本应用请求的权限</h2>
+<table>
+  <thead><tr><th>权限</th><th>用途</th></tr></thead>
+  <tbody>
+    <tr><td>INTERNET</td><td>广告、购买、可选同步和下载列表。</td></tr>
+    <tr><td>CAMERA</td><td>镜子模式：在语句后方显示前置摄像头画面。不录制。</td></tr>
+    <tr><td>RECORD_AUDIO / MODIFY_AUDIO_SETTINGS</td><td>我的声音：录制您的肯定语。音频保留在手机上。</td></tr>
+    <tr><td>POST_NOTIFICATIONS / RECEIVE_BOOT_COMPLETED / WAKE_LOCK</td><td>提醒（仅在您开启时）以及重启后恢复提醒。</td></tr>
+    <tr><td>FOREGROUND_SERVICE / MEDIA_PLAYBACK</td><td>熄屏时继续播放音乐或语音。</td></tr>
+    <tr><td>SET_WALLPAPER</td><td>将您选择的图片设为壁纸。</td></tr>
+    <tr><td>VIBRATE</td><td>点击语句时轻微振动。</td></tr>
+    <tr><td>AD_ID</td><td>显示广告（仅免费版）。</td></tr>
+  </tbody>
+</table>
 
-  <h2>6. 政策变更</h2>
-  <p>我们可能会更新本政策。变更将在应用内通知。</p>
+<h2>6. 儿童</h2>
+<p>本应用不面向 13 岁以下儿童，我们不会故意收集未成年人的数据。如果您认为有未成年人向我们提供了信息，请联系我们，我们将予以删除。</p>
 
-  <h2>7. 联系方式</h2>
-  <p>Alain Salazar Hernandez &nbsp;|&nbsp; <a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
+<h2>7. 您的权利（GDPR / CCPA）</h2>
+<p>您可以访问、更正或删除您的数据。卸载本应用或清除其数据即可删除本地数据；如需删除云端副本，请给我们写信。Google 或 RevenueCat 持有的数据，请参阅其隐私政策或联系我们。</p>
+
+<h2>8. 变更</h2>
+<p>我们可能会更新本政策，新版本将以更新日期发布在同一地址。</p>
+
+<h2>9. 联系方式</h2>
+<p><a href="mailto:opusvolt@gmail.com">opusvolt@gmail.com</a></p>
 </div>
 
 <script>
+  var LANGS = ['es','en','fr','pt','zh'];
   function show(lang) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.getElementById(lang).classList.add('active');
+    document.querySelectorAll('.section').forEach(function (s) { s.classList.toggle('active', s.id === lang); });
   }
+  var start = location.hash ? location.hash.slice(1) : (navigator.language || 'es').slice(0, 2).toLowerCase();
+  if (LANGS.indexOf(start) >= 0) show(start);
 </script>
 </body>
 </html>
